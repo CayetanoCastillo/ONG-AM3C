@@ -1,3 +1,9 @@
 img{
-    width: 250px;
+    width: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
+h2{
+    color: purple;
+    font-size: 30px;
