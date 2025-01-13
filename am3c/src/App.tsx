@@ -1,13 +1,13 @@
-import Header from './componentes/Header'
+import Header from './componentes/header'
 import './App.css'
 
 const App = () => {
   return(
     <>
-    <Header></Header>
-    <h1>Marketing</h1>
+      <Header></Header>
     </>
   )
 }
+
 
 export default App
