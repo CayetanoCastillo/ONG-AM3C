@@ -26,3 +26,9 @@ nav a:hover {
     background-color: #c160c8;
     border-bottom: 5px solid black;
 }
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    color: #c160c8;
+}
