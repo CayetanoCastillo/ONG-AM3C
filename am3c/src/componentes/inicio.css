@@ -59,34 +59,6 @@ h2 {
     margin: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-.Mision {
-    background-color: #ffe6f7;
-    border-radius: 30px;
-    padding: 50px;
-    text-align: center;
-    font-size: 18px;
-    color: #7a287d;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    margin: 0;
-    margin-right: 20px;
-    margin-bottom: 50px;
-}
-.Vision{
-    background-color: #ffe6f7;
-    border-radius: 30px;
-    padding: 50px;
-    text-align: center;
-    font-size: 18px;
-    color: #7a287d;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    margin: 0;
-    margin-right: 20px;
-}
-
-
 footer {
     background-color:  #ffe6f7;
     color: #7a287d;
