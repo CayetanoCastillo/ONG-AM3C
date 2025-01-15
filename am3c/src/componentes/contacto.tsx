@@ -79,6 +79,8 @@ const contacto = () => {
             <div className='grid grid50 redes'>
                 <a href="https://www.adidas.es/"><img src="./Facebook.png" alt="" /></a>
                 <a href="https://www.thecoreschool.com/"><img src="./Instagram.png" alt="" /></a>
+                <a href=""><img src="./WhatsAp.png" alt="" /></a>
+                <a href=""><img src="./Gmail.png" alt="" /></a>
             </div>
         </div>
     )
