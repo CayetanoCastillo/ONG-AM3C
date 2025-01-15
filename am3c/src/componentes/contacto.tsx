@@ -14,18 +14,15 @@ const contacto = () => {
                     </p>
                     <div className="mapa">
                         <h2>Nuestra Ubicación</h2>
-                        <iframe
-                            title="Google Maps"
-                            src="https://www.google.com/maps?q=Tres+Cantos,+Madrid&z=15&output=embed"
-                            width="100%"
-                            height="350"
-                            style={{ border: 0 }}
-                            allowFullScreen=""
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.384848174664!2d-3.7136316999999996!3d40.599331899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43d5b04c81aaa3%3A0xab7d66b2ff1cd6e1!2sAsociaci%C3%B3n%20de%20Mujeres%20de%20Tres%20Cantos%20-%20Creciendo%20Juntas!5e0!3m2!1ses!2ses!4v1736945446378!5m2!1ses!2ses"
+                         width="400" 
+                         height="400" 
+                         style={{border:0}} 
+                         allowFullScreen="" 
+                         loading="lazy" 
+                         referrerPolicy="no-referrer-when-downgrade"></iframe>
                         <a
-                            href="https://www.google.com/maps?q=Tres+Cantos+Madrid&z=15&output=embed"
+                            href="https://www.google.com/maps/place/Asociaci%C3%B3n+de+Mujeres+de+Tres+Cantos+-+Creciendo+Juntas/@40.5993319,-3.7136317,17z/data=!3m1!4b1!4m6!3m5!1s0xd43d5b04c81aaa3:0xab7d66b2ff1cd6e1!8m2!3d40.5993319!4d-3.7136317!16s%2Fg%2F11tfd7mh74?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="location-button"
@@ -79,8 +76,8 @@ const contacto = () => {
             <div className='grid grid50 redes'>
                 <a href="https://www.adidas.es/"><img src="./Facebook.png" alt="" /></a>
                 <a href="https://www.thecoreschool.com/"><img src="./Instagram.png" alt="" /></a>
-                <a href=""><img src="./WhatsAp.png" alt="" /></a>
-                <a href=""><img src="./Gmail.png" alt="" /></a>
+                <a href=""><img src="./WhatsApp.png" alt="" /></a>
+                <a href=""><img src="./gmail.png" alt="" /></a>
             </div>
         </div>
     )
