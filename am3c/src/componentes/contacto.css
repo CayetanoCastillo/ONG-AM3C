@@ -1,11 +1,11 @@
-/* GENERAL STYLES */
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #fdf3f7;
 }
 
-/* TITLES */
+
 h1 {
     text-align: center;
     font-size: 36px;
@@ -20,7 +20,7 @@ h2 {
     margin-top: 10px;
 }
 
-/* GRID STYLES */
+
 .grid {
     display: grid;
     gap: 20px;
@@ -43,7 +43,12 @@ h2 {
     line-height: 1.6;
 }
 
-/* FORM CONTAINER */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: -120px;
+}
 .form-contacto {
     padding: 30px;
 }
@@ -54,7 +59,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* FORM ELEMENTS */
+
 form {
     display: flex;
     flex-direction: column;
@@ -79,8 +84,8 @@ textarea {
     resize: none;
 }
 
-/* CONTACT PREFERENCE CHECKBOXES */
-.contact-preference label {
+
+.preferencias label {
     display: inline-block;
     margin-right: 15px;
     font-size: 16px;
@@ -94,7 +99,7 @@ textarea {
     font-size: 14px;
 }
 
-/* BUTTON STYLE */
+
 button {
     margin-top: 20px;
     padding: 12px 20px;
@@ -113,8 +118,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* MAP BOX */
-.map-box {
+.mapa {
     background-color: #ffe6f7;
     padding: 30px;
     margin: 40px auto;
@@ -125,7 +129,7 @@ button:hover {
     text-align: center;
 }
 
-.map-box h2 {
+.mapa h2 {
     color: #7a287d;
     margin-bottom: 20px;
 }
@@ -146,4 +150,10 @@ button:hover {
 .location-button:hover {
     background-color: #c160c8;
     transform: scale(1.05);
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 150px;
 }
