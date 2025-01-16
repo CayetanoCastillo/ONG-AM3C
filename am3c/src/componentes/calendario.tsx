@@ -73,35 +73,43 @@ const Calendario: React.FC = () => {
   };
 
   return (
-    <div className="calendar">
-      <div className="calendar__info">
-        <div className="calendar__prev" onClick={handlePrevMonth}>&#9664;</div>
-        <div className="calendar__month">{monthNames[currentMonth]}</div>
-        <div className="calendar__year">{currentYear}</div>
-        <div className="calendar__next" onClick={handleNextMonth}>&#9654;</div>
-      </div>
+    <>
+      <h1>Actividades y Encuentros para Crecer Juntas</h1>
+      <h2>¿Qué pasa este mes en AM3C?</h2>
+      <div className='calendar_box'>
 
-      <div className="calendar__week">
-        <div className="calendar__day calendar__item">Mon</div>
-        <div className="calendar__day calendar__item">Tue</div>
-        <div className="calendar__day calendar__item">Wed</div>
-        <div className="calendar__day calendar__item">Thu</div>
-        <div className="calendar__day calendar__item">Fri</div>
-        <div className="calendar__day calendar__item">Sat</div>
-        <div className="calendar__day calendar__item">Sun</div>
-      </div>
 
-      <div className="calendar__dates">
-        {days.map((day, index) => {
-          const isCurrentDay = day === currentDate.getDate() && currentMonth === currentDate.getMonth() && currentYear === currentDate.getFullYear();
-          return (
-            <div key={index} className={`calendar__date calendar__item ${isCurrentDay ? 'calendar__today' : ''}`}>
-              {day}
-            </div>
-          );
-        })}
+        <div className="calendar">
+          <div className="calendar__info">
+            <div className="calendar__prev" onClick={handlePrevMonth}>&#9664;</div>
+            <div className="calendar__month">{monthNames[currentMonth]}</div>
+            <div className="calendar__year">{currentYear}</div>
+            <div className="calendar__next" onClick={handleNextMonth}>&#9654;</div>
+          </div>
+
+          <div className="calendar__week">
+            <div className="calendar__day calendar__item">Mon</div>
+            <div className="calendar__day calendar__item">Tue</div>
+            <div className="calendar__day calendar__item">Wed</div>
+            <div className="calendar__day calendar__item">Thu</div>
+            <div className="calendar__day calendar__item">Fri</div>
+            <div className="calendar__day calendar__item">Sat</div>
+            <div className="calendar__day calendar__item">Sun</div>
+          </div>
+
+          <div className="calendar__dates">
+            {days.map((day, index) => {
+              const isCurrentDay = day === currentDate.getDate() && currentMonth === currentDate.getMonth() && currentYear === currentDate.getFullYear();
+              return (
+                <div key={index} className={`calendar__date calendar__item ${isCurrentDay ? 'calendar__today' : ''}`}>
+                  {day}
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
