@@ -6,7 +6,7 @@ const contacto = () => {
             <h1>¡Hablemos y Conectemos!</h1>
             <h2>Estamos aquí para escucharte</h2>
             <div className='grid grid50'>
-                <div className='grid grid33'>
+                <div>
                     <p>Si deseas unirte a nuestra <b>asociación de Mujeres de Tres Cantos</b>, conocer más sobre
                         nuestras actividades o tienes alguna duda, no dudes en contactarnos.
                         Nos encantaría contar contigo en nuestra comunidad y acompañarte en el camino de
@@ -50,16 +50,7 @@ const contacto = () => {
 
                             <label htmlFor="message">Mensaje:</label>
                             <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                            <div className="preferencias">
-                                <br />
-                                <br />
-                                <label>
-                                    <input type="checkbox" name="contact_preference" value="email" /> Correo electrónico
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="contact_preference" value="phone" /> Teléfono
-                                </label>
-                            </div>
+                            <br />
                             <br />
                             <div className="confirmar">
                                 <label>
@@ -67,17 +58,12 @@ const contacto = () => {
                                     Acepto la política de protección de datos y autorizo a AM3C "Creciendo Juntas" a utilizar mis datos únicamente para responder a mi solicitud de contacto.
                                 </label>
                             </div>
-
+                            <br />
+                            <br />
                             <button type="submit">Enviar Mensaje</button>
                         </form>
                     </section>
                 </div>
-            </div>
-            <div className='grid grid50 redes'>
-                <a href="https://www.adidas.es/"><img src="./Facebook.png" alt="" /></a>
-                <a href="https://www.thecoreschool.com/"><img src="./Instagram.png" alt="" /></a>
-                <a href=""><img src="./WhatsApp.png" alt="" /></a>
-                <a href=""><img src="./gmail.png" alt="" /></a>
             </div>
         </div>
     )
