@@ -38,7 +38,12 @@ const footer = () => {
                                 rel="noopener noreferrer">
                                 <img src="./WhatsApp.png" alt="whatsapp" />
                             </a>
-                            <a href=""><img src="./Gmail.png" alt="gmail" /></a>
+                            <a 
+                                href="mailto:asociacionmujeres3c@gmail.com?subject=Hola&body=Escribe%20tu%20mensaje%20aquí" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                <img src="./Gmail.png" alt="gmail" />
+                            </a>
                         </ul>
                     </section>
                     <section>
