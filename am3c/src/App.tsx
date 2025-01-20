@@ -1,6 +1,7 @@
 import Header from './componentes/header'
 import Inicio from './componentes/inicio'
-import Contacto from './componentes/contacto'
+import Contacto from './componentes/contacto' 
+import Servicio from './componentes/servicio'
 import Footer from './componentes/footer'
 import './App.css'
 
@@ -10,6 +11,7 @@ const App = () => {
       <Header></Header>
       <Inicio></Inicio>
       <Contacto></Contacto>
+      <Servicio></Servicio>
       <Footer></Footer>
     </>
   )
