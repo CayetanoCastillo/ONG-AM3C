@@ -15,9 +15,9 @@ const App = () => {
       <Inicio></Inicio>
       <QuienesSomos></QuienesSomos>
       <NuestraHistoria></NuestraHistoria>
-      <Contacto></Contacto>
       <Servicio></Servicio>
       <Evento></Evento>
+      <Contacto></Contacto>
       <Footer></Footer>
     </>
   )
