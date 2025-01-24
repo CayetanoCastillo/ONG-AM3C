@@ -30,28 +30,15 @@ header img {
     margin-top: 5px;
 }
 
-.buttons {
-    display: flex;
-    gap: 10px;
-    top: 10px;
-    right: 5px;
-    position: absolute;
-}
-
-.buttons button {
+.button a{
     background-color: #7a287d;
-    color: white;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.buttons button:hover {
-    background-color: #c160c8;
-    transform: scale(1.05);
+    transition: background-color 0.3s ease;
 }
 
 nav {

@@ -7,9 +7,8 @@ const Header = () => {
                 <div className="header-content">
                     <img src="./LOGO ASOCIACIÓN CAMBIO COLORES_Mesa de trabajo 1 copia-05.png" alt="Logo Asociación" />
                     <h1 className="titulo">AM3C "Creciendo Juntas"</h1>
-                    <div className="buttons">
-                        <button>Registrarse</button>
-                        <button>Iniciar Sesión</button>
+                    <div className="button">
+                        <a href="./HazteSocia.tsx">¡HAZTE SOCIA!</a>
                     </div>
                 </div>
                 <nav>
