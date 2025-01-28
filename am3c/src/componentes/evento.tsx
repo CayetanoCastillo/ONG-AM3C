@@ -14,7 +14,7 @@ const Evento = () => {
                 oportunidad para profundizar en nuestros valores de fraternidad y <b>transformación
                 social</b>.</p>
                 <div className='grid grid50'>
-                <img src="./reseña.png" alt="" />
+                <img  className="reseña" src="./reseña.png" alt="" />
                 <img src="./evento.jpeg" alt="" />
                 </div>
             </div>
