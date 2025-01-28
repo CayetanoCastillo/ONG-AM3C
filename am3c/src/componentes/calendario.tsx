@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './calendario.css';
+import React, { useState, useEffect } from 'react'
+import './calendario.css'
 
 const Calendario: React.FC = () => {
   const monthNames = [
@@ -74,7 +74,10 @@ const Calendario: React.FC = () => {
   };
 
   return (
-    <>
+    <div className='calendario'>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
       <h1>Actividades y Encuentros para Crecer Juntas</h1>
       <h2>¿Qué pasa este mes en AM3C?</h2>
       <div className='calendar_container'>
@@ -132,8 +135,8 @@ const Calendario: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Calendario;
+export default Calendario
