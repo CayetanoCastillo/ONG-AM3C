@@ -5,6 +5,7 @@ import Header from './componentes/header'
 import Inicio from './componentes/inicio';
 import QuienesSomos from './componentes/QuienesSomos';
 import NuestraHistoria from './componentes/NuestraHistoria';
+import Calendario from './componentes/calendario';
 import Servicio from './componentes/servicio';
 import Evento from './componentes/evento';
 import Contacto from './componentes/contacto';
@@ -46,6 +47,11 @@ const App = () => {
         <Route
           path="/nuestraHistoria"
           element={<NuestraHistoria />}
+        >
+        </Route>
+        <Route
+          path="/calendario"
+          element={<Calendario />}
         >
         </Route>
         <Route
