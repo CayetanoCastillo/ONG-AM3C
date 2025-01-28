@@ -2,7 +2,10 @@ import './NuestraHistoria.css';
 
 const NuestraHistoria = () => {
     return (
-        <div>
+        <div className='nuestra-historia'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
             <h1>NUESTRA HISTORIA:</h1>
             <h2>De la visión de una mujer al crecimiento de una comunidad</h2>
             <div className='grid historia'>

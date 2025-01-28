@@ -1,27 +1,77 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
+import Index from './index';
 import Header from './componentes/header'
-import Inicio from './componentes/inicio'
-import QuienesSomos from './componentes/QuienesSomos'
-import NuestraHistoria from './componentes/NuestraHistoria'
-import Contacto from './componentes/contacto' 
-import Servicio from './componentes/servicio'
-import Evento from './componentes/evento'
+import Inicio from './componentes/inicio';
+import QuienesSomos from './componentes/QuienesSomos';
+import NuestraHistoria from './componentes/NuestraHistoria';
+import Servicio from './componentes/servicio';
+import Evento from './componentes/evento';
+import Contacto from './componentes/contacto';
 import Footer from './componentes/footer'
-import './App.css'
 
 const App = () => {
+
   return(
-    <>
-      <Header></Header>
-      <Inicio></Inicio>
-      <QuienesSomos></QuienesSomos>
-      <NuestraHistoria></NuestraHistoria>
-      <Servicio></Servicio>
-      <Evento></Evento>
-      <Contacto></Contacto>
-      <Footer></Footer>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+        <Route
+          path="/"
+          element={<Index />}
+        >
+        </Route>
+        <Route
+          path="/header"
+          element={<Header />}
+        >
+        </Route>
+        <Route
+          path="/inicio"
+          element={<Inicio />}
+        >
+        </Route>
+        <Route
+          path="/quienesSomos"
+          element={<QuienesSomos />}
+        >
+        
+        </Route>
+        <Route
+          path="/evento"
+          element={<Evento />}
+        >
+        
+        </Route>
+        <Route
+          path="/nuestraHistoria"
+          element={<NuestraHistoria />}
+        >
+        </Route>
+        <Route
+          path="/servicio"
+          element={<Servicio />}
+        >
+        </Route>
+        <Route
+          path="/evento"
+          element={<Evento />}
+        >
+        </Route>
+        <Route
+          path="/contacto"
+          element={<Contacto />}
+        >
+        </Route>
+        <Route
+          path="/footer"
+          element={<Footer />}
+        >
+        </Route>
+        </Route>
+      </Routes>
+    </Router>
   )
 }
-
 
 export default App

@@ -2,7 +2,10 @@ import './footer.css';
 
 const footer = () => {
     return (
-        <div>
+        <div className='footer'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
             <footer>
                 <div className='grid grid33'>
                     <section className='informacion'>

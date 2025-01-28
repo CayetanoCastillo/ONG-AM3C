@@ -1,39 +1,45 @@
-body {
+.roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.servicio body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
     background-color: #fdf3f7;
 }
-.grid{
+.servicio .grid{
     display: grid;
 }   
-.grid333{
+.servicio .grid333{
     grid-template-columns: 33% 33% 33%;
 }
-.grid333 img{
+.servicio .grid333 img{
     width: 300px;
 }
-.servicio{
+.servicio .servicio{
     max-width: 1200px;
     margin: auto;
     background-color: #ffe6f7;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-h1 {
+.servicio h1 {
     text-align: center;
     font-size: 36px;
     color: #7a287d;
     margin-top: 30px;
 }
 
-h2 {
+.servicio h2 {
     text-align: center;
     font-size: 28px;
     color: #c160c8;
     margin-top: 10px;
 }
 
-p {
+.servicio p {
     font-size: 1.1rem;
     margin-bottom: 15px;
     text-align: justify;
@@ -41,25 +47,25 @@ p {
 }
 
 
-b {
+.servicio b {
     color: #7a287d;
     font-weight: bold;
 }
 
 
-ul {
+.servicio ul {
     list-style-type: disc;
     margin: 20px 0;
     padding-left: 40px;
 }
 
-li {
+.servicio li {
     margin-bottom: 10px;
     font-size: 1rem;
 }
 
 
-li b {
+.servicio li b {
     color: #7a287d;
     font-size: 1.1rem;
 }

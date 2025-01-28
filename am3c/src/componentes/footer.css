@@ -1,3 +1,10 @@
+ .roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
 
 footer {
     background-color: #f7f1f9; 
@@ -7,16 +14,14 @@ footer {
     margin-top: 50px;
     font-size: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
 }
 
-
-.grid {
+.footer .grid {
     display: grid;
     gap: 20px;
     padding: 40px;
 }
-.grid50{
+.footer .grid50{
     grid-template-columns: 50% 50%;
     max-width: 1200px;
     margin: auto;
@@ -24,7 +29,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.grid25{
+.footer .grid25{
     grid-template-columns: 25% 25% 25% 25%;
     max-width: 1200px;
     margin: auto;
@@ -33,7 +38,7 @@ footer {
     margin-top: 50px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.grid33 {
+.footer .grid33 {
     grid-template-columns:33% 33% 33%;
     max-width: 1200px;
     margin: auto;
@@ -42,55 +47,55 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.grid5 {
+.footer .grid5 {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
 
-.informacion {
+.footer .informacion{
     text-align: left;
 }
 
-.tituinf {
+.footer  .tituinf {
     text-align: center;
     font-size: 20px;
     color: #7a287d; 
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-.tituinfo{
+.footer  .tituinfo{
     text-align: r;
 }
 
-ul {
+.footer  ul{
     list-style: none;
     padding: 0;
 }
 
-ul li {
+.footer ul li {
     margin: 8px 0;
 }
 
-ul li a {
+.footer ul li a {
     color: #7a287d; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-ul li a:hover {
+.footer ul li a:hover {
     color: #4d276b; 
 }
 
 
-.grid5 img {
+.footer .grid5 img {
     width: 40px; 
     height: 40px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid5 img:hover {
+.footer .grid5 img:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

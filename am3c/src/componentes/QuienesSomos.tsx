@@ -1,8 +1,13 @@
 import './QuienesSomos.css';
 
+
 const QuienesSomos = () => {
     return (
-        <div>
+
+        <div className='quienesSomos'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
             <h1>QUIENES SOMOS</h1>
             <h2>Un Lugar para Crecer, Compartir y Transformar.</h2>
             <div className='grid grid50'>

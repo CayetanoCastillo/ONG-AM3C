@@ -1,28 +1,30 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+.roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
-header {
+.header header {
     background-color: #ffe6f7;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-bottom: 5px solid #c160c8;
-    padding: 20px;
+    padding: 8px;
 }
 
-.header-content {
+.header .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header img {
+.header header img {
     width: 150px;
     margin-left: 20px;
 }
 
-.titulo {
+.header .titulo {
     color: #7a287d;
     font-size: 28px;
     font-weight: bold;
@@ -30,7 +32,7 @@ header img {
     margin-top: 5px;
 }
 
-.button a{
+.header .button a{
     background-color: #7a287d;
     color: #fff;
     padding: 10px 20px;
@@ -41,7 +43,7 @@ header img {
     transition: background-color 0.3s ease;
 }
 
-nav {
+.header nav {
     background-color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -50,7 +52,7 @@ nav {
     margin-top: 10px;
 }
 
-nav ul {
+.header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -59,7 +61,7 @@ nav ul {
     gap: 20px;
 }
 
-nav a {
+.header nav a {
     color: #7a287d;
     text-decoration: none;
     font-weight: bold;
@@ -71,20 +73,18 @@ nav a {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav a:hover {
+.header nav a:hover {
     background-color: #c160c8;
     color: #fff;
     transform: scale(1.1);
     border-color: #c160c8;
 }
 
-
-
-nav .dropdown {
+.header nav .dropdown {
     position: relative;
 }
 
-nav .dropdown-menu {
+.header nav .dropdown-menu {
     display: none;
     position: absolute;
     top: 200%;  
@@ -95,11 +95,11 @@ nav .dropdown-menu {
     border-radius: 8px;
 }
 
-nav .dropdown:hover .dropdown-menu {
+.header nav .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-nav .dropdown-menu li a {
+.header nav .dropdown-menu li a {
     color: purple;
     padding: 12px 25px;
     border-radius: 8px;
@@ -109,6 +109,6 @@ nav .dropdown-menu li a {
     transition: background-color 0.3s ease;
 }
 
-nav .dropdown-menu li a:hover {
+.header nav .dropdown-menu li a:hover {
     background-color: #c160c8;
 }

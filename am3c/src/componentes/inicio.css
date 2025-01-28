@@ -1,13 +1,19 @@
+.roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
 
-body {
+.inicio body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     color: #333;
 }
 
 
-h1 {
+.inicio h1 {
     text-align: center;
     margin-top: 50px;
     font-size: 42px;
@@ -15,7 +21,7 @@ h1 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.inicio h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 32px;
@@ -24,13 +30,13 @@ h2 {
 }
 
 
-.grid {
+.inicio .grid {
     display: grid;
 }
 
-.grid50 {
+.inicio .grid50 {
     grid-template-columns: 50% 50%;
-    margin: 80px auto;
+    margin: 60px auto;
     max-width: 1200px;
     gap: 40px;
     padding: 20px;
@@ -38,7 +44,7 @@ h2 {
 }
 
 
-.grid50 p {
+.inicio .grid50 p {
     background-color: #ffe6f7;
     border-radius: 30px;
     padding: 80px;
@@ -52,7 +58,7 @@ h2 {
 }
 
 
-.grid50 img {
+.inicio .grid50 img {
     border-radius: 20px;
     width: 100%;
     max-width: 450px;

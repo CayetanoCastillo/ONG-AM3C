@@ -2,7 +2,10 @@ import './evento.css';
 
 const Evento = () => {
     return (
-        <div>
+        <div className='evento'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
             <div className='grid'>
             <h1>Eventos Especiales</h1>
             <h2>Encuentros que transforman</h2>

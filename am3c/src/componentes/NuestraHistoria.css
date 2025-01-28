@@ -1,27 +1,34 @@
-body {
+.roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.nuestra-historia body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     color: #333;
 }
-h1 {
+.nuestra-historia h1 {
     text-align: center;
     margin-top: 50px;
     font-size: 42px;
     color: #c160c8;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-h2 {
+.nuestra-historia h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 32px;
     color: #a850b0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-.grid {
+.nuestra-historia .grid {
     display: grid;
 }
-.grid50 {
+.nuestra-historia .grid50 {
     grid-template-columns: 50% 50%;
     margin: 80px auto;
     max-width: 1200px;
@@ -29,7 +36,7 @@ h2 {
     padding: 20px;
     align-items: center;
 }
-.grid50 p {
+.nuestra-historia .grid50 p {
     background-color: #ffe6f7;
     border-radius: 30px;
     padding: 80px;
@@ -41,14 +48,14 @@ h2 {
     margin: 0;
     margin-right: 20px;
 }
-.grid50 img {
+.nuestra-historia .grid50 img {
     border-radius: 20px;
     width: 100%;
     max-width: 450px;
     margin: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.historia{
+.nuestra-historia .historia{
     max-width: 1200px;
     margin: auto;
     background-color: #ffe6f7;

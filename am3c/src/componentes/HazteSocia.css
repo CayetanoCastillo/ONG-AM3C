@@ -1,0 +1,99 @@
+.roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+} 
+
+.HazteSocia body {
+    margin: 0;
+    background-color: #fdf3f7;
+    color: #333;
+}
+
+.HazteSocia h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #7a287d;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.HazteSocia h3 {
+    text-align: center;
+    font-size: 22px;
+    color: #c160c8;
+    margin-top: 10px;
+}
+
+.HazteSocia form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffe6f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.HazteSocia label {
+    font-weight: bold;
+    color: #7a287d;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.HazteSocia input {
+    padding: 10px;
+    border: 2px solid #c160c8;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.HazteSocia input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.HazteSocia input:focus {
+    outline: none;
+    border-color: #7a287d;
+    box-shadow: 0 0 5px rgba(122, 40, 125, 0.5);
+}
+
+.HazteSocia .confirmar{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #7a287d;
+}
+
+.HazteSocia .confirmar label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.HazteSocia button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #7a287d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.HazteSocia button:hover {
+    background-color: #c160c8;
+    transform: scale(1.05);
+}

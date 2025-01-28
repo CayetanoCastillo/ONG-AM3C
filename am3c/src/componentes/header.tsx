@@ -1,38 +1,35 @@
 import './Header.css'
-
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
-        <>
+        <div className='header'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
             <header>
                 <div className="header-content">
                     <img src="./LOGO ASOCIACIÓN CAMBIO COLORES_Mesa de trabajo 1 copia-05.png" alt="Logo Asociación" />
                     <h1 className="titulo">AM3C "Creciendo Juntas"</h1>
                     <div className="button">
-                        <a href="./HazteSocia.tsx">¡HAZTE SOCIA!</a>
+                        <Link to="/HazteSocia">HAZTE SOCIA!!!</Link>
                     </div>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li className="dropdown">
-                            <a href="#">Quiénes Somos</a>
-                            <ul className="dropdown-menu">
-                                <li><a href="#">Equipos</a></li>
-                                <li><a href="#">Nuestra Historia</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Calendario</a></li>
-                        <li className="dropdown">
-                            <a href="#">Servicios</a>
-                            <ul className="dropdown-menu">
-                                <li><a href="#">Eventos</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Contacto</a></li>
+                        <Link to="/">Index</Link>
+                        <Link to="/QuienesSomos">QuienesSomos</Link>
+                        <Link to="/equipos">Equipos</Link>
+                        <Link to="/NuestraHistoria">NuestraHistoria</Link>
+                        <Link to="/calendario">calendario</Link>
+                        <Link to="/servicio">Servicios</Link>
+                        <Link to="/Evento">Evento</Link>
+                        <Link to="/contacto">Contacto</Link>
                     </ul>
+
+
                 </nav>
             </header>
-        </>
+        </div>
     )
 }
 

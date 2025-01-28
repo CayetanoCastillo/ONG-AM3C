@@ -2,7 +2,11 @@ import './inicio.css'
 
 const inicio = () => {
     return (
-        <div>
+        
+        <div className='inicio'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
             <h1>Bienvenidos a la Asociación de Mujeres de Tres Cantos</h1>
             <h2>Juntas Crecemos y Transformamos el Futuro</h2>
             <div className='grid grid50'>

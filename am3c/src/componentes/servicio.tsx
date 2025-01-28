@@ -2,7 +2,10 @@ import './servicio.css';
 
 const Servicio = () => {
     return (
-        <div>
+        <div className='servicio'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
                 <h1>Nuestros Servicios</h1>
                 <h2>Contribuyendo con el Bienestar de Nuestra Comunidad</h2>
             <div className=' grid servicio'>
