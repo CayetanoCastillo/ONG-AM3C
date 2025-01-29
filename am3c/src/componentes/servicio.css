@@ -11,12 +11,18 @@
 }
 .servicio .grid{
     display: grid;
+    gap: 20px;
+    padding: 40px;
 }   
 .servicio .grid333{
     grid-template-columns: 33% 33% 33%;
 }
 .servicio .grid333 img{
+    border-radius: 20px;
     width: 300px;
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .servicio .servicio{
     max-width: 1200px;
@@ -40,10 +46,16 @@
 }
 
 .servicio p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    text-align: justify;
-    line-height: 1.8;
+    background-color: #ffe6f7;
+    border-radius: 30px;
+    padding: 80px;
+    text-align: center;
+    font-size: 18px;
+    color: #7a287d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    margin: 0;
+    margin-right: 20px;
 }
 
 
