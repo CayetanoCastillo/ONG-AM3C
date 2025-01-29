@@ -4,13 +4,14 @@ import Index from './index';
 import Header from './componentes/header'
 import Inicio from './componentes/inicio';
 import QuienesSomos from './componentes/QuienesSomos';
-import Equipo from './componentes/equipo';
+import Equipo from './componentes/Equipo';
 import NuestraHistoria from './componentes/NuestraHistoria';
 import Calendario from './componentes/calendario';
 import Servicio from './componentes/servicio';
 import Evento from './componentes/evento';
 import Contacto from './componentes/contacto';
 import Footer from './componentes/footer'
+import HazteSocia from './componentes/HazteSocia';
 
 const App = () => {
 
@@ -73,6 +74,11 @@ const App = () => {
         <Route
           path="/footer"
           element={<Footer />}
+        >
+        </Route>
+        <Route
+          path="/HazteSocia"
+          element={<HazteSocia />}
         >
         </Route>
         </Route>

@@ -21,7 +21,7 @@ const HazteSocia = () => {
                 <label htmlFor="dni">DNI:</label>
                 <input type="text" id="dni" name="dni" placeholder="Escribe tu DNI" required />
 
-                <label htmlFor="domicilio">Doomicilio:</label>
+                <label htmlFor="domicilio">Domicilio:</label>
                 <input type="text" id='domicilio' name='domicilio' placeholder='Escribe aqui tu domicilio' required />
 
                 <label htmlFor="email">Correo electrónico:</label>

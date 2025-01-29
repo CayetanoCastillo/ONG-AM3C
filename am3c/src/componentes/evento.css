@@ -29,24 +29,21 @@
     display: grid;
     gap: 20px;
     padding: 40px;
+    
 }
 
 .evento .grid50{
     grid-template-columns: 50% 50%;
-    margin:  0 80px auto;
+    margin: 60px auto;
     max-width: 1200px;
     gap: 40px;
-    padding: 20px;
+    padding: 50px;
     align-items: center;
-    background-color:  #f9f9f9;
-    border-radius: 30px;
-    padding: 80px;
-    text-align: center;
-    font-size: 18px;
-    color: #7a287d;
+    justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    margin-right: 20px;
+    border-radius: 20px;
+    background-color:#ffe6f7b6;
+    margin-bottom: 60px;
 }
 
 .evento .grid50 img{
@@ -55,4 +52,15 @@
     max-width: 450px;
     margin: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.evento .grid p{
+    background-color: #ffe6f7;
+    border-radius: 30px;
+    padding: 80px;
+    text-align: center;
+    color: #7a287d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    width: 50%;
+    justify-content: center;
 }
