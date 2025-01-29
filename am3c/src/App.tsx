@@ -4,6 +4,7 @@ import Index from './index';
 import Header from './componentes/header'
 import Inicio from './componentes/inicio';
 import QuienesSomos from './componentes/QuienesSomos';
+import Equipo from './componentes/equipo';
 import NuestraHistoria from './componentes/NuestraHistoria';
 import Calendario from './componentes/calendario';
 import Servicio from './componentes/servicio';
@@ -39,8 +40,8 @@ const App = () => {
         
         </Route>
         <Route
-          path="/evento"
-          element={<Evento />}
+          path="/equipo"
+          element={<Equipo />}
         >
         
         </Route>

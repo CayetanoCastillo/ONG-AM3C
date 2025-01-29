@@ -33,7 +33,7 @@ const inicio = () => {
                     generar un cambio real.</p>
 
             </div>
-            <div className='grid grid50 mv'>
+            <div className='grid grid50'>
                 <p><b>Vision</b><br /><br />Queremos ser un referente de
                     transformación en Madrid, creando
                     oportunidades para todas las generaciones.

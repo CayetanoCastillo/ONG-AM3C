@@ -12,7 +12,6 @@ const QuienesSomos = () => {
             <h2>Un Lugar para Crecer, Compartir y Transformar.</h2>
             <div className='grid grid50'>
                 <img src="./foto am3c.jpg" alt="" />
-
                 <p>Somos una <b>asociación de mujeres</b> en <b>Tres Cantos</b> con un propósito claro: crear un
                     espacio de crecimiento personal, apoyo mutuo y <b>transformación</b> social. Aquí
                     compartimos, aprendemos y, sobre todo, nos acompañamos.

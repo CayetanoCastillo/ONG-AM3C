@@ -6,31 +6,35 @@
     font-variation-settings: "wdth" 100;
 }
 
-.quienesSomos body {
+
+.equipo body {
     margin: 0;
     background-color: #fdf3f7;
 }
-.quienesSomos h1 {
+
+.equipo h1 {
     text-align: center;
     font-size: 36px;
     color: #7a287d;
     margin-top: 30px;
 }
 
-.quienesSomos h2 {
+.equipo h2 {
     text-align: center;
     font-size: 28px;
     color: #c160c8;
     margin-top: 10px;
 }
+.equipo h3{
+    text-align: center;
+}
 
-
-.quienesSomos .grid {
+.equipo .grid {
     display: grid;
     gap: 20px;
     padding: 40px;
 }
-.quienesSomos .grid50{
+.equipo .grid50{
     grid-template-columns: 50% 50%;
     margin: 60px auto;
     max-width: 1200px;
@@ -43,8 +47,7 @@
     background-color: #fff;
     margin-bottom: 60px;
 }
-
-.quienesSomos .grid50 p {
+.equipo .grid50 p {
     background-color: #ffe6f7;
     border-radius: 30px;
     padding: 80px;
@@ -56,10 +59,50 @@
     margin: 0;
     margin-right: 20px;
 }
-.quienesSomos .grid50 img{
+
+.equipo .grid50 img{
     border-radius: 20px;
     width: 100%;
     max-width: 450px;
     margin: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.equipo .junta p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #7a287d; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffe6f7;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.equipo a {
+    color:#7a287d; 
+    text-decoration: none;
+}
+
+.equipo a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .equipo .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipo h1 {
+        font-size: 2rem;
+    }
+
+    .equipo h2 {
+        font-size: 1.2rem;
+    }
+
+    .equipo .grid50 img {
+        width: 100%;
+        height: auto;
+    }
 }
