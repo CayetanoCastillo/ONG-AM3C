@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './servicio.css';
 
 const Servicio = () => {
@@ -25,7 +26,8 @@ const Servicio = () => {
                     <img src="./foto am3c.jpg" alt="" />
                     <img src="./foto am3c.jpg" alt="" />
                 </div>
-                <h2>Agenda tu sesion de apoyo / enlazar con contacto</h2>
+                <Link to="/contacto">Agenda tu sesion de apoyo</Link>
+                
             </div>
         </div>
 
