@@ -8,7 +8,7 @@
 
 .nuestra-historia body {
     margin: 0;
-    background-color: #fdf3f7;
+    background-color: #ffe6f7;
 }
 .nuestra-historia h1 {
     text-align: center;
@@ -37,7 +37,7 @@
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    background-color: #fff;
+    background-color:#ffe6f7;
     margin-bottom: 60px;
 }
 .nuestra-historia .grid50 p {
