@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './calendario.css';
 
 const Calendario: React.FC = () => {
@@ -132,6 +133,7 @@ const Calendario: React.FC = () => {
           </div>
         </div>
       </div>
+      <h2><Link className='calendario' to="/contacto">Reserva tu lugar en nuestra próxima actividad</Link></h2>
     </>
   );
 };

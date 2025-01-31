@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './QuienesSomos.css';
 
 
@@ -26,6 +27,7 @@ const QuienesSomos = () => {
                     colaboración y en el poder de construir juntos.
                     Convencidas de que cada pequeña acción cuenta, seguimos avanzando, <b>“creciendo
                     juntas”</b> y creando un espacio de apoyo y <b>empoderamiento</b> para todas y todos</p>
+            <h2><Link className='quienessomosLink' to="/NuestraHistoria">Descubre nuestra historia</Link></h2>
             </div>
         </div>
     )

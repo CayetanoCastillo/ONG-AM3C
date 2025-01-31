@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './evento.css';
 
 const Evento = () => {
@@ -21,6 +22,7 @@ const Evento = () => {
                     <img src="./evento.jpeg" alt="" />
                 </div>
             </div>
+            <h2><Link className='evento' to="/NuestraHistoria">Conoce más sobre nuestra historia</Link></h2>
         </div>
     )
 }

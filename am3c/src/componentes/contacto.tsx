@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './contacto.css';
 
 const contacto = () => {
@@ -67,6 +68,7 @@ const contacto = () => {
                         </form>
                     </section>
                 </div>
+                <h2><Link className='evento' to="/calendario">Haz parte tambien, de nuetras actividades programadas</Link></h2>
             </div>
         </div>
     )

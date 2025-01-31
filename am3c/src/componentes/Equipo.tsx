@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './equipo.css';
 
 const Equipo = () => {
@@ -29,7 +30,7 @@ const Equipo = () => {
                 entorno.Con una visión clara, constituyó la Asociación de Mujeres de Tres Cantos para
                 fomentar la solidaridad, la ayuda altruista y generosa, y la hermandad entre todas.</p>
                 </div>
-                
+                <h2><Link className='equipo' to="/contacto">¿Quieres ser parte de nuestra asociación? ¡Contáctanos!</Link></h2>
             </div>
         </div>
     )

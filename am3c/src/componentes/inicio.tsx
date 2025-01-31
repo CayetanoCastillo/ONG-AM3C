@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './inicio.css'
 
 const inicio = () => {
@@ -43,6 +44,7 @@ const inicio = () => {
                     futuro más inclusivo y lleno de esperanza.</p>
                 <img src="./foto am3c.jpg" alt="" />
             </div>
+            <h2><Link className='calendario' to="/calendario">Mira las actividades de las que puedes hacer parte</Link></h2>
         </div>
 
     )
