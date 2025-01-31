@@ -5,14 +5,15 @@
     color: #7a287d;
     font-weight: bold;
   }
-  .calendar_box{
-    max-width: 1200px;
+  .calendar_box {
+    width: 600px; /* Establece un ancho fijo */
+    max-width: 600px; /* Evita que se expanda */
     margin: auto;
     background-color: #ffe6f7;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Previene que el contenido lo haga crecer */
   }
-
   .title {
     text-align: center;
     color: #444;
@@ -53,7 +54,9 @@
   .calendar__next {
     margin-left: auto;
   }
-
+  .calendar__dates{
+    min-height: 270px;
+  }
   .calendar__week,
   .calendar__dates {
     display: grid;
@@ -68,7 +71,7 @@
 
   .calendar__item {
     text-align: center;
-    line-height: 2;
+    line-height: 3;
   }
 
   .calendar__last-days {
@@ -76,7 +79,7 @@
   }
   .calendar_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     max-width: 1200px;
     margin: auto;
@@ -89,6 +92,11 @@
     border-radius: 10px;
     padding: 1em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-height: 150px; /* Asegura que siempre tenga el tamaño de cuando está abierto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible; /* Siempre visible */
   }
   
   .calendar_details_text {

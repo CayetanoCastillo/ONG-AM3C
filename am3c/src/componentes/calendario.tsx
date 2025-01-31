@@ -118,18 +118,20 @@ const Calendario: React.FC = () => {
               })}
             </div>
           </div>
-
           <div className='calendar_details'>
-            {selectedDay ? (
-              <div className='calendar_details_text'>
-                <h3>Información del {selectedDay} de {monthNames[currentMonth]} {currentYear}</h3>
-                <p>Aquí puedes añadir información o eventos relacionados con este día.</p>
-              </div>
-            ) : (
-              <div className='calendar_details_text'>
-                <p>Selecciona un día para ver más detalles.</p>
-              </div>
-            )}
+            <div className='calendar_details_text'>
+              {selectedDay ? (
+                <>
+                  <h3>Información del {selectedDay} de {monthNames[currentMonth]} {currentYear}</h3>
+                  <p>Aquí puedes añadir información o eventos relacionados con este día.</p>
+                </>
+              ) : (
+                <>
+                  <h3>Detalles del día</h3>
+                  <p>Selecciona un día para ver más información.</p>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>
