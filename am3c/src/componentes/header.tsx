@@ -20,7 +20,7 @@ const Header = () => {
                         <Link to="/QuienesSomos">QuienesSomos</Link>
                         <Link to="/equipo">Equipos</Link>
                         <Link to="/NuestraHistoria">NuestraHistoria</Link>
-                        <Link to="/calendario">calendario</Link>
+                        <Link to="/calendario">Calendario</Link>
                         <Link to="/servicio">Servicios</Link>
                         <Link to="/Evento">Evento</Link>
                         <Link to="/contacto">Contacto</Link>

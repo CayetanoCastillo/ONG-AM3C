@@ -26,9 +26,8 @@ const Servicio = () => {
                     <img src="./foto am3c.jpg" alt="" />
                     <img src="./foto am3c.jpg" alt="" />
                 </div>
-                <h2><Link className='contacto' to="/contacto">Agenda tu sesion de apoyo</Link></h2>
-                
             </div>
+                <h2><Link className='contacto' to="/contacto">Agenda tu sesion de apoyo</Link></h2>
         </div>
 
     )
