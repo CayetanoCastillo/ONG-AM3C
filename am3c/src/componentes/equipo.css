@@ -68,7 +68,18 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-
+.equipo .junta{
+    gap: 20px;
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #ffe6f7b6;
+    margin-bottom: 30px;
+}
 .equipo .junta p {
     font-size: 1rem;
     line-height: 1.6;

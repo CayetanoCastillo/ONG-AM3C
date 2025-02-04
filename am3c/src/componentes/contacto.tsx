@@ -11,11 +11,13 @@ const contacto = () => {
             <h2>Estamos aquí para escucharte</h2>
             <div className='grid grid50'>
                 <div>
+                    <div className='uniones'>
                     <p>Si deseas unirte a nuestra <b>asociación de Mujeres de Tres Cantos</b>, conocer más sobre
                         nuestras actividades o tienes alguna duda, no dudes en contactarnos.
                         Nos encantaría contar contigo en nuestra comunidad y acompañarte en el camino de
                         crecimiento y <b>empoderamiento</b>.
                     </p>
+                    </div>
                     <div className="mapa">
                         <h2>Nuestra Ubicación</h2>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.384848174664!2d-3.7136316999999996!3d40.599331899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43d5b04c81aaa3%3A0xab7d66b2ff1cd6e1!2sAsociaci%C3%B3n%20de%20Mujeres%20de%20Tres%20Cantos%20-%20Creciendo%20Juntas!5e0!3m2!1ses!2ses!4v1736945446378!5m2!1ses!2ses"
