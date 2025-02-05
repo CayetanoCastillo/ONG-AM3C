@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import './inicio.css'
 
 const inicio = () => {
+
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
-        
+
         <div className='inicio'>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -45,6 +49,22 @@ const inicio = () => {
                 <img src="./foto am3c.jpg" alt="" />
             </div>
             <h2><Link className='calendario' to="/calendario">Mira las actividades de las que puedes hacer parte</Link></h2>
+
+
+            {/* Botón flotante */}
+            <button className="floating-button" onClick={() => setModalOpen(true)}>
+                Abrir Modal
+            </button>
+
+            {/* Modal */}
+            {modalOpen && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="close" onClick={() => setModalOpen(false)}>&times;</span>
+                        <p>Este es un mensaje importante para los visitantes.</p>
+                    </div>
+                </div>
+            )}
         </div>
 
     )
