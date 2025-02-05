@@ -1,3 +1,4 @@
+import {ParallaxProvider} from 'react-scroll-parallax';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import Index from './index';
@@ -16,6 +17,7 @@ import HazteSocia from './componentes/HazteSocia';
 const App = () => {
 
   return(
+    <ParallaxProvider>
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -84,6 +86,7 @@ const App = () => {
         </Route>
       </Routes>
     </Router>
+      </ParallaxProvider>
   )
 }
 
