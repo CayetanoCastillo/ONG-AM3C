@@ -51,17 +51,21 @@ const inicio = () => {
             <h2><Link className='calendario' to="/calendario">Mira las actividades de las que puedes hacer parte</Link></h2>
 
 
-            {/* Botón flotante */}
             <button className="floating-button" onClick={() => setModalOpen(true)}>
-                Abrir Modal
+                ¡Pulsa Aqui!
             </button>
 
-            {/* Modal */}
             {modalOpen && (
                 <div className="modal">
                     <div className="modal-content">
                         <span className="close" onClick={() => setModalOpen(false)}>&times;</span>
-                        <p>Este es un mensaje importante para los visitantes.</p>
+                        <p>Bienvenida a la asociacion de mujeres de tres cantos, somos una asociacion donde el crecimiento personal , el apoyo mutuo y la trasnfromacion social cobran
+                             vida, ofrecemos disitintos tipos de servicios como terapias, atencion psicologica, apoyo y asesoria juridica para diversas situaciones, cualquier duda 
+                             no dudes en contactar con nosotras en nuestro apartado de contacto y unete a nosotras pulsando al boton de hazte socia y crece en una comunidad que 
+                             te apoya y empodera.   
+                            <h2><Link className='' to="/HazteSocia">Hazte Socia</Link></h2>
+                            <h2><Link className='' to="/contacto">Contactanos</Link></h2>
+                        </p>
                     </div>
                 </div>
             )}

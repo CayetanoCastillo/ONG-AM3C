@@ -74,7 +74,7 @@
     text-align: center;
 }
 
-/* Botón flotante en la parte inferior derecha */
+
 .floating-button {
     position: fixed;
     bottom: 20px;
@@ -92,8 +92,6 @@
 .floating-button:hover {
     background-color: #a850b0;
 }
-
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -102,23 +100,144 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    max-width: 90%;
     text-align: center;
+    transform: translateY(-30px);
+    animation: slideUp 0.5s ease-out;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .close {
-    float: right;
-    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #c160c8;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: #a850b0;
+    transform: scale(1.1);
+}
+
+.modal p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: justify;
+    opacity: 0.8;
+}
+
+.modal h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilos para los enlaces dentro del modal */
+.modal a {
+    display: inline-block;
+    text-decoration: none;
+    color: #c160c8;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.modal a:hover {
+    color: #a850b0;
+    transform: scale(1.05);
+    background-color: rgba(193, 96, 200, 0.1);
+    text-decoration: none;
+}
+
+.modal a:active {
+    color: #9b3b9f;
+    transform: scale(1);
+}
+
+/* Estilo para el segundo enlace */
+.modal a:last-child {
+    margin-top: 30px;
+    background-color: #f1e1f5;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+/* Estilo del botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c160c8;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #a850b0;
+    transform: scale(1.1);
+}
+
+.floating-button:active {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #f0e7f5 0%, #c160c8 100%);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+.floating-button {
+    background-color: #c160c8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
