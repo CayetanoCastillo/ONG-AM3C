@@ -93,13 +93,13 @@ const Calendario: React.FC = () => {
             </div>
 
             <div className="calendar__week">
-              <div className="calendar__day calendar__item">Mon</div>
-              <div className="calendar__day calendar__item">Tue</div>
-              <div className="calendar__day calendar__item">Wed</div>
-              <div className="calendar__day calendar__item">Thu</div>
-              <div className="calendar__day calendar__item">Fri</div>
-              <div className="calendar__day calendar__item">Sat</div>
-              <div className="calendar__day calendar__item">Sun</div>
+              <div className="calendar__day calendar__item">Lun</div>
+              <div className="calendar__day calendar__item">Mar</div>
+              <div className="calendar__day calendar__item">Mie</div>
+              <div className="calendar__day calendar__item">Jue</div>
+              <div className="calendar__day calendar__item">Vie</div>
+              <div className="calendar__day calendar__item">Sab</div>
+              <div className="calendar__day calendar__item">Dom</div>
             </div>
 
             <div className="calendar__dates">
