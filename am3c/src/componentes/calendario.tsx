@@ -75,11 +75,15 @@ const Calendario: React.FC = () => {
   };
 
   return (
-    <>
+    <div className='calendario'>
       <h1>Actividades y Encuentros para Crecer Juntas</h1>
       <h2>¿Qué pasa este mes en AM3C?</h2>
       <div className='calendar_container'>
-        <div className='calendar_box '>
+          <p><b>En la Asociación de Mujeres de Tres Cantos</b>, cada mes, preparamos una
+            programación llena de actividades para disfrutar <b>creciendo juntas</b>. Desde talleres de
+            meditación y baile hasta clases de idiomas y <b>apoyo emocional</b>, nuestras actividades
+            buscan el bienestar y el desarrollo integral de cada socia.</p>
+        <div className='calendar_box'>
           <div className="calendar">
             <div className="calendar__info">
               <div className="calendar__prev" onClick={handlePrevMonth}>&#9664;</div>
@@ -89,13 +93,13 @@ const Calendario: React.FC = () => {
             </div>
 
             <div className="calendar__week">
-              <div className="calendar__day calendar__item">Mon</div>
-              <div className="calendar__day calendar__item">Tue</div>
-              <div className="calendar__day calendar__item">Wed</div>
-              <div className="calendar__day calendar__item">Thu</div>
-              <div className="calendar__day calendar__item">Fri</div>
-              <div className="calendar__day calendar__item">Sat</div>
-              <div className="calendar__day calendar__item">Sun</div>
+              <div className="calendar__day calendar__item">Lun</div>
+              <div className="calendar__day calendar__item">Mar</div>
+              <div className="calendar__day calendar__item">Mie</div>
+              <div className="calendar__day calendar__item">Jue</div>
+              <div className="calendar__day calendar__item">Vie</div>
+              <div className="calendar__day calendar__item">Sab</div>
+              <div className="calendar__day calendar__item">Dom</div>
             </div>
 
             <div className="calendar__dates">
@@ -118,23 +122,25 @@ const Calendario: React.FC = () => {
               })}
             </div>
           </div>
-
           <div className='calendar_details'>
-            {selectedDay ? (
-              <div className='calendar_details_text'>
-                <h3>Información del {selectedDay} de {monthNames[currentMonth]} {currentYear}</h3>
-                <p>Aquí puedes añadir información o eventos relacionados con este día.</p>
-              </div>
-            ) : (
-              <div className='calendar_details_text'>
-                <p>Selecciona un día para ver más detalles.</p>
-              </div>
-            )}
+            <div className='calendar_details_text'>
+              {selectedDay ? (
+                <>
+                  <h3>Información del {selectedDay} de {monthNames[currentMonth]} {currentYear}</h3>
+                  <p>Aquí puedes añadir información o eventos relacionados con este día.</p>
+                </>
+              ) : (
+                <>
+                  <h3>Detalles del día</h3>
+                  <p>Selecciona un día para ver más información.</p>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>
       <h2><Link className='calendario' to="/contacto">Reserva tu lugar en nuestra próxima actividad</Link></h2>
-    </>
+    </div>
   );
 };
 
