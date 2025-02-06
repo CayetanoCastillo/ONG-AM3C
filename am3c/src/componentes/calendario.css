@@ -5,15 +5,12 @@
     color: #7a287d;
     font-weight: bold;
   }
-  .calendar_box {
-    width: 600px; /* Establece un ancho fijo */
-    max-width: 600px; /* Evita que se expanda */
-    margin: auto;
-    background-color: #ffe6f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Previene que el contenido lo haga crecer */
+  .calendar_box{
+    display: grid;
+    grid-template-columns: 60% auto;
   }
+
+
   .title {
     text-align: center;
     color: #444;
@@ -54,9 +51,11 @@
   .calendar__next {
     margin-left: auto;
   }
-  .calendar__dates{
+
+  .calendar__dates {
     min-height: 270px;
   }
+
   .calendar__week,
   .calendar__dates {
     display: grid;
@@ -77,39 +76,72 @@
   .calendar__last-days {
     opacity: .3;
   }
+
   .calendar_container {
-    display: flex;
     justify-content: center;
     align-items: flex-start;
     max-width: 1200px;
     margin: auto;
-    padding: 1em;
+    padding: 50px;
+    background-color: #ffe6f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
   }
-  
+
   .calendar_details {
-    width: 30%;
     background: #ffe6f7;
     border-radius: 10px;
     padding: 1em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    min-height: 150px; /* Asegura que siempre tenga el tamaño de cuando está abierto */
+    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: visible; /* Siempre visible */
+    visibility: visible;
   }
-  
+
   .calendar_details_text {
     text-align: left;
   }
-  
+
   .calendar__selected {
     background: #7a287d;
     color: white;
   }
+
   .calendar__date:hover {
     cursor: pointer;
     background: #7a287d;
     color: white;
     transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .calendario h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #7a287d;
+    margin-top: 30px;
+  }
+
+  .calendario h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #c160c8;
+    margin-top: 10px;
+  }
+  
+  .calendario p {
+    background-color: #ffe6f7;
+    border-radius: 30px;
+    padding: 80px;
+    text-align: center;
+    font-size: 18px;
+    color: #7a287d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 50px;
   }

@@ -75,11 +75,15 @@ const Calendario: React.FC = () => {
   };
 
   return (
-    <>
+    <div className='calendario'>
       <h1>Actividades y Encuentros para Crecer Juntas</h1>
       <h2>¿Qué pasa este mes en AM3C?</h2>
       <div className='calendar_container'>
-        <div className='calendar_box '>
+          <p><b>En la Asociación de Mujeres de Tres Cantos</b>, cada mes, preparamos una
+            programación llena de actividades para disfrutar <b>creciendo juntas</b>. Desde talleres de
+            meditación y baile hasta clases de idiomas y <b>apoyo emocional</b>, nuestras actividades
+            buscan el bienestar y el desarrollo integral de cada socia.</p>
+        <div className='calendar_box'>
           <div className="calendar">
             <div className="calendar__info">
               <div className="calendar__prev" onClick={handlePrevMonth}>&#9664;</div>
@@ -136,7 +140,7 @@ const Calendario: React.FC = () => {
         </div>
       </div>
       <h2><Link className='calendario' to="/contacto">Reserva tu lugar en nuestra próxima actividad</Link></h2>
-    </>
+    </div>
   );
 };
 
