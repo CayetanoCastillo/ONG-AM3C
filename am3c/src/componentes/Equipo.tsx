@@ -19,7 +19,7 @@ const Equipo = () => {
                     radica en la unión y en el crecimiento colectivo. TODAS somos parte fundamental de
                     este proyecto.</p>
                 </div>
-                 <h3>El corazón y la visión de nuestro camino</h3>
+                 <h2>El corazón y la visión de nuestro camino</h2>
                 <div className='grid grid50'>
                 <img src="./laura.png" alt="" />
                 <p>Laura Muñiz, actual presidenta y fundadora, es el corazón de esta asociación de
