@@ -1,8 +1,14 @@
 import './HazteSocia.css';
+import {Helmet} from 'react-helmet';
 
 const HazteSocia = () => {
     return (
         <div className='HazteSocia'>
+            <Helmet>
+            <meta name="description" content="hdshadhsad"></meta>
+            <meta name="keywords" content="hdsahdhsad"></meta>
+            <title>Hazte Socia</title>
+            </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
             </style>

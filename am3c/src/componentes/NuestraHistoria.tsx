@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import './NuestraHistoria.css';
+import {Helmet} from 'react-helmet';
+
 
 const NuestraHistoria = () => {
     return (
         <div className='nuestra-historia'>
+            <Helmet>
+            <meta name="description" content="hdshadhsad"></meta>
+            <meta name="keywords" content="hdsahdhsad"></meta>
+            <title>Nuestra Historia</title>
+            </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
             </style>

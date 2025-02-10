@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import './equipo.css';
+import {Helmet} from 'react-helmet';
+
 
 const Equipo = () => {
     return (
         <div className='equipo'>
+            <Helmet>
+            <meta name="description" content="hdshadhsad"></meta>
+            <meta name="keywords" content="hdsahdhsad"></meta>
+            <title>Equipo</title>
+            </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
             </style>

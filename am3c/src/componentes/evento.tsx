@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import './evento.css';
+import {Helmet} from 'react-helmet';
+
 
 const Evento = () => {
     return (
         <div className='evento'>
+            <Helmet>
+            <meta name="description" content="hdshadhsad"></meta>
+            <meta name="keywords" content="hdsahdhsad"></meta>
+            <title>Eventos</title>
+            </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
             </style>
@@ -22,9 +29,9 @@ const Evento = () => {
                     <img src="./evento.jpeg" alt="" />
                 </div>
             </div>
-            <h2><Link className='evento' to="/NuestraHistoria">Conoce más sobre nuestra historia</Link></h2>
+            <h2><Link className='evento1' to="/NuestraHistoria">Conoce más sobre nuestra historia</Link></h2>
         </div>
     )
 }
 
-export default Evento;
+    export default Evento;

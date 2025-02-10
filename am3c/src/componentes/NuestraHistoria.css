@@ -35,6 +35,7 @@
     border-radius: 20px;
     background-color:#ffe6f7;
     padding: 20px;
+    line-height: 1.6;
 }
 .nuestra-historia .grid50 {
     grid-template-columns: 50% 50%;
