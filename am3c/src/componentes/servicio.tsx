@@ -6,8 +6,9 @@ const Servicio = () => {
     return (
         <div className='servicio'>
             <Helmet>
-            <meta name="description" content="hdshadhsad"></meta>
-            <meta name="keywords" content="hdsahdhsad"></meta>
+            <meta name="description" content="Descubre los servicios de bienestar y apoyo de la Asociación de Mujeres de Tres Cantos. Terapias como Reiki, Shiatsu, atención psicológica y
+            asesoría jurídica para apoyar a nuestra comunidad."></meta>
+            <meta name="keywords" content="asociacion de mujeres de tres cantos reiki atencion psicologa aseroria juridica"></meta>
             <title>Servicios</title>
             </Helmet>
             <style>

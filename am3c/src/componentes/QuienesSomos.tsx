@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './QuienesSomos.css';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 
 const QuienesSomos = () => {
@@ -8,9 +8,10 @@ const QuienesSomos = () => {
 
         <div className='quienesSomos'>
             <Helmet>
-            <meta name="description" content="hdshadhsad"></meta>
-            <meta name="keywords" content="hdsahdhsad"></meta>
-            <title>Quienes Somos</title>
+                <meta name="description" content="Únete a la Asociación de Mujeres de Tres Cantos. Un espacio de crecimiento personal, apoyo mutuo y transformación social, abierto a
+                todos los que deseen contribuir a un mundo más inclusivo y equitativo."></meta>
+                <meta name="keywords" content="asociacion de mujeres de tres Cantos transformacion social creciendo juntas mujeres de tres cantos empoderamiento"></meta>
+                <title>Quienes Somos</title>
             </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -32,7 +33,7 @@ const QuienesSomos = () => {
                     y contribuir al crecimiento de esta comunidad son bienvenidos. Creemos en la
                     colaboración y en el poder de construir juntos.
                     Convencidas de que cada pequeña acción cuenta, seguimos avanzando, <b>“creciendo
-                    juntas”</b> y creando un espacio de apoyo y <b>empoderamiento</b> para todas y todos</p>
+                        juntas”</b> y creando un espacio de apoyo y <b>empoderamiento</b> para todas y todos</p>
             </div>
             <h2><Link className='quienessomosLink' to="/NuestraHistoria">Descubre nuestra historia</Link></h2>
         </div>

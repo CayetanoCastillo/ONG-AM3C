@@ -7,8 +7,9 @@ const Equipo = () => {
     return (
         <div className='equipo'>
             <Helmet>
-            <meta name="description" content="hdshadhsad"></meta>
-            <meta name="keywords" content="hdsahdhsad"></meta>
+            <meta name="description" content="Únete a la Asociación de Mujeres de Tres Cantos. Un espacio de crecimiento personal, apoyo mutuo y transformación social, 
+            abierto a todos los que deseen contribuir a un mundo más inclusivo y equitativo."></meta>
+            <meta name="keywords" content="asociacion de mujeres de tres cantos am3c  asociacion de mujeres mujeres en la sociedad"></meta>
             <title>Equipo</title>
             </Helmet>
             <style>

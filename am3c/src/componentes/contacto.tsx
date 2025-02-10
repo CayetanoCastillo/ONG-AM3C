@@ -7,8 +7,9 @@ const contacto = () => {
     return (
         <div className='contacto'>
             <Helmet>
-            <meta name="description" content="hdshadhsad"></meta>
-            <meta name="keywords" content="hdsahdhsad"></meta>
+            <meta name="description" content="¿Quieres unirte a nuestra asociación o tienes alguna duda? Contáctanos y descubre todo lo que la Asociación de Mujeres de Tres Cantos
+            tiene para ofrecerte."></meta>
+            <meta name="keywords" content="asociacion de mujeres de tres cantos emporderamiento"></meta>
             <title>Contacto</title>
             </Helmet>
             <style>

@@ -7,8 +7,9 @@ const NuestraHistoria = () => {
     return (
         <div className='nuestra-historia'>
             <Helmet>
-            <meta name="description" content="hdshadhsad"></meta>
-            <meta name="keywords" content="hdsahdhsad"></meta>
+            <meta name="description" content="Conoce cómo nuestra fundadora, Laura Muñiz, hizo realidad el sueño de unir y empoderar a mujeres en Tres Cantos. Un espacio de
+            crecimiento, hermandad y apoyo donde seguimos creciendo juntas."></meta>
+            <meta name="keywords" content="mujeres tres cantos asociacion de mujeres de tres cantos creciendo juntas"></meta>
             <title>Nuestra Historia</title>
             </Helmet>
             <style>

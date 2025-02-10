@@ -7,8 +7,9 @@ const Evento = () => {
     return (
         <div className='evento'>
             <Helmet>
-            <meta name="description" content="hdshadhsad"></meta>
-            <meta name="keywords" content="hdsahdhsad"></meta>
+            <meta name="description" content="Conoce los eventos especiales organizados por la Asociación de Mujeres de Tres Cantos. Encuentros transformadores, conferencias y
+            actividades de empoderamiento que impulsan el cambio."></meta>
+            <meta name="keywords" content="actividades comunitarias asociacion de mujeres de tres cantos transformacion social emporderamiento"></meta>
             <title>Eventos</title>
             </Helmet>
             <style>
