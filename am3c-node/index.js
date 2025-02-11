@@ -3,12 +3,15 @@ const path = require("path");
 const cors = require("cors");
 const puerto = 8080;
 const app = express();
-const userSchema = require('./schemas/Socia');
-const mongooseCon = require ('./functions/conexion');
+const sociaSchema = require('./schemas/Socia');
+const contactoSchema = require('./schemas/Contacto');
+const mongooseCon = require ('./conexion');
 const mongoose = require("mongoose");
-const Usuario = mongoose.model("Socia", userSchema);
-console.log(userSchema);
-
+const Contacto = mongoose.model("Contacto", contactoSchema);
+const Socia = mongoose.model("Socia", sociaSchema);
+app.use(express.json());
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 
 
 app.get('/', (req, res) => {
@@ -39,9 +42,9 @@ app.post("/HazteSocia", (req, res) => {
 
 app.post("/contacto", (req, res) => {
     console.log(req.body);
-    const nuevoUsuario = new Usuario({
+    const nuevoUsuario = new Contacto({
         nombre: req.body.nombre,
-        correo: req.body.correo,
+        email: req.body.correo,
         telefono: req.body.telefono,
         asunto: req.body.asunto,
         mensaje: req.body.mensaje,

@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const userSchema = new mongoose.Schema({
+const contactoSchema = new mongoose.Schema({
     nombre:{
         type: String,
         required: true
     },
-    correo:{
+    email:{
         type: String,
         required: true
     },
@@ -22,4 +22,4 @@ const userSchema = new mongoose.Schema({
     }
 })
 
-module.exports = userSchema;
+module.exports = contactoSchema;

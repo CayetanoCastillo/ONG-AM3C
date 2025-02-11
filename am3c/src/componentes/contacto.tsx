@@ -1,9 +1,39 @@
 import { Link } from 'react-router-dom';
 import './contacto.css';
 import {Helmet} from 'react-helmet';
+import{useRef} from 'react';
 
 
 const contacto = () => {
+
+    const nombre = useRef<HTMLInputElement>(null);
+    const email = useRef<HTMLInputElement>(null);
+    const telefono = useRef<HTMLInputElement>(null);
+    const asunto = useRef<HTMLInputElement>(null);
+    const mensaje = useRef<HTMLTextAreaElement>(null);
+
+
+    const enviar = (event:any) => {
+        event.preventDefault();
+        const contacto = {
+            nombre: nombre.current?.value,
+            correo: email.current?.value,
+            telefono: telefono.current?.value,
+            asunto: asunto.current?.value,
+            mensaje: mensaje.current?.value
+        }
+        console.log(contacto);
+        fetch("http://localhost:8080/contacto",
+            {
+                method : "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(contacto)
+            }
+        )
+    }
+
     return (
         <div className='contacto'>
             <Helmet>
@@ -12,6 +42,9 @@ const contacto = () => {
             <meta name="keywords" content="asociacion de mujeres de tres cantos, emporderamiento"></meta>
             <title>Contacto | Asociación de Mujeres de Tres Cantos</title>
             </Helmet>
+
+
+
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
             </style>
@@ -49,21 +82,21 @@ const contacto = () => {
                 <div className='formulario'>
                     <section className="form-contacto">
                         <h2>Formulario de Contacto</h2>
-                        <form action="#" method="POST">
-                            <label htmlFor="name">Nombre completo:</label>
-                            <input type="text" id="name" name="name" placeholder="Escribe tu nombre completo" required />
+                        <form  method="POST" onSubmit={enviar}>
+                            <label htmlFor="nombre">Nombre completo:</label>
+                            <input type="text" ref={nombre} id="name" name="name" placeholder="Escribe tu nombre completo" required />
 
                             <label htmlFor="email">Correo electrónico:</label>
-                            <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required />
+                            <input type="email" ref={email} id="email" name="email" placeholder="Escribe tu correo electrónico" required />
 
-                            <label htmlFor="phone">Teléfono de contacto:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Escribe tu número de teléfono" />
+                            <label htmlFor="telefono">Teléfono de contacto:</label>
+                            <input type="tel" ref={telefono} id="phone" name="phone" placeholder="Escribe tu número de teléfono" />
 
-                            <label htmlFor="subject">Asunto del mensaje:</label>
-                            <input type="text" id="subject" name="subject" placeholder="Escribe el asunto" required />
+                            <label htmlFor="asunto">Asunto del mensaje:</label>
+                            <input type="text" ref={asunto} id="subject" name="subject" placeholder="Escribe el asunto" required />
 
-                            <label htmlFor="message">Mensaje:</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            <label htmlFor="mensaje">Mensaje:</label>
+                            <textarea id="message" ref={mensaje} name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
                             <br />
                             <br />
                             <div className="confirmar">
