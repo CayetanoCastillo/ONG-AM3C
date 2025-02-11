@@ -9,8 +9,8 @@ const Equipo = () => {
             <Helmet>
             <meta name="description" content="Únete a la Asociación de Mujeres de Tres Cantos. Un espacio de crecimiento personal, apoyo mutuo y transformación social, 
             abierto a todos los que deseen contribuir a un mundo más inclusivo y equitativo."></meta>
-            <meta name="keywords" content="asociacion de mujeres de tres cantos am3c  asociacion de mujeres mujeres en la sociedad"></meta>
-            <title>Equipo</title>
+            <meta name="keywords" content="asociacion de mujeres de tres cantos, am3c,  asociacion de mujeres, mujeres en la sociedad"></meta>
+            <title>Asociación de Mujeres en Tres Cantos | Crecimiento Personal y Solidaridad.</title>
             </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');

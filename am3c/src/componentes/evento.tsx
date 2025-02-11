@@ -9,8 +9,8 @@ const Evento = () => {
             <Helmet>
             <meta name="description" content="Conoce los eventos especiales organizados por la Asociación de Mujeres de Tres Cantos. Encuentros transformadores, conferencias y
             actividades de empoderamiento que impulsan el cambio."></meta>
-            <meta name="keywords" content="actividades comunitarias asociacion de mujeres de tres cantos transformacion social emporderamiento"></meta>
-            <title>Eventos</title>
+            <meta name="keywords" content="actividades comunitarias, asociacion de mujeres de tres cantos, transformacion social, emporderamiento"></meta>
+            <title>Eventos Especiales | Asociación de Mujeres de Tres Cantos</title>
             </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');

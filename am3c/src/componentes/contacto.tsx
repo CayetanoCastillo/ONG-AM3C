@@ -9,8 +9,8 @@ const contacto = () => {
             <Helmet>
             <meta name="description" content="¿Quieres unirte a nuestra asociación o tienes alguna duda? Contáctanos y descubre todo lo que la Asociación de Mujeres de Tres Cantos
             tiene para ofrecerte."></meta>
-            <meta name="keywords" content="asociacion de mujeres de tres cantos emporderamiento"></meta>
-            <title>Contacto</title>
+            <meta name="keywords" content="asociacion de mujeres de tres cantos, emporderamiento"></meta>
+            <title>Contacto | Asociación de Mujeres de Tres Cantos</title>
             </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');

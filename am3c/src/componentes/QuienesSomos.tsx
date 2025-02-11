@@ -10,8 +10,8 @@ const QuienesSomos = () => {
             <Helmet>
                 <meta name="description" content="Únete a la Asociación de Mujeres de Tres Cantos. Un espacio de crecimiento personal, apoyo mutuo y transformación social, abierto a
                 todos los que deseen contribuir a un mundo más inclusivo y equitativo."></meta>
-                <meta name="keywords" content="asociacion de mujeres de tres Cantos transformacion social creciendo juntas mujeres de tres cantos empoderamiento"></meta>
-                <title>Quienes Somos</title>
+                <meta name="keywords" content="asociacion de mujeres de tres Cantos, transformacion social, creciendo juntas, mujeres de tres cantos, empoderamiento"></meta>
+                <title>Asociación de Mujeres en Tres Cantos | Crecimiento Personal y Solidaridad</title>
             </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');

@@ -9,8 +9,8 @@ const NuestraHistoria = () => {
             <Helmet>
             <meta name="description" content="Conoce cómo nuestra fundadora, Laura Muñiz, hizo realidad el sueño de unir y empoderar a mujeres en Tres Cantos. Un espacio de
             crecimiento, hermandad y apoyo donde seguimos creciendo juntas."></meta>
-            <meta name="keywords" content="mujeres tres cantos asociacion de mujeres de tres cantos creciendo juntas"></meta>
-            <title>Nuestra Historia</title>
+            <meta name="keywords" content="mujeres, tres cantos, asociacion de mujeres de tres cantos, creciendo juntas"></meta>
+            <title>Nuestra Historia: Asociación de Mujeres de Tres Cantos</title>
             </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');

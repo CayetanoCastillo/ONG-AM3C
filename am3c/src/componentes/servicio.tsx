@@ -8,8 +8,8 @@ const Servicio = () => {
             <Helmet>
             <meta name="description" content="Descubre los servicios de bienestar y apoyo de la Asociación de Mujeres de Tres Cantos. Terapias como Reiki, Shiatsu, atención psicológica y
             asesoría jurídica para apoyar a nuestra comunidad."></meta>
-            <meta name="keywords" content="asociacion de mujeres de tres cantos reiki atencion psicologa aseroria juridica"></meta>
-            <title>Servicios</title>
+            <meta name="keywords" content="asociacion de mujeres de tres cantos, reiki, atencion psicologa, aseroria juridica"></meta>
+            <title>Servicios de Bienestar y Apoyo | Asociación de Mujeres de Tres Cantos.</title>
             </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
