@@ -23,12 +23,12 @@ app.listen(puerto, () => {
 
 app.post("/HazteSocia", (req, res) => {
     console.log(req.body);
-    const nuevoUsuario = new Usuario({
+    const nuevoUsuario = new Socia({
         nombre: req.body.nombre,
         apellido: req.body.apellido,
         apellido2: req.body.apellido2,
         dni: req.body.dni,
-        domicilo: req.body.domicilio,
+        domicilio: req.body.domicilio,
         correo: req.body.correo,
         telefono: req.body.telefono,
         
@@ -52,7 +52,7 @@ app.post("/contacto", (req, res) => {
     })
     nuevoUsuario.save()
     .then((usuario) => {
-        console.log("Socia creada correctamente: "+usuario)
+        console.log("Contacto creada correctamente: "+usuario)
     })
-    res.send("Socia creada correctamente.");
+    res.send("Contacto creada correctamente.");
 })
