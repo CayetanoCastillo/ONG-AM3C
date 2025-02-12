@@ -36,6 +36,7 @@ const QuienesSomos = () => {
                         juntas”</b> y creando un espacio de apoyo y <b>empoderamiento</b> para todas y todos</p>
             </div>
             <h2><Link className='quienessomosLink' to="/NuestraHistoria">Descubre nuestra historia</Link></h2>
+
         </div>
     )
 

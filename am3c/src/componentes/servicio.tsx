@@ -1,21 +1,21 @@
 import { Link } from 'react-router-dom';
 import './servicio.css';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 const Servicio = () => {
     return (
         <div className='servicio'>
             <Helmet>
-            <meta name="description" content="Descubre los servicios de bienestar y apoyo de la Asociación de Mujeres de Tres Cantos. Terapias como Reiki, Shiatsu, atención psicológica y
+                <meta name="description" content="Descubre los servicios de bienestar y apoyo de la Asociación de Mujeres de Tres Cantos. Terapias como Reiki, Shiatsu, atención psicológica y
             asesoría jurídica para apoyar a nuestra comunidad."></meta>
-            <meta name="keywords" content="asociacion de mujeres de tres cantos, reiki, atencion psicologa, aseroria juridica"></meta>
-            <title>Servicios de Bienestar y Apoyo | Asociación de Mujeres de Tres Cantos.</title>
+                <meta name="keywords" content="asociacion de mujeres de tres cantos, reiki, atencion psicologa, aseroria juridica"></meta>
+                <title>Servicios de Bienestar y Apoyo | Asociación de Mujeres de Tres Cantos.</title>
             </Helmet>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
             </style>
-                <h1>Nuestros Servicios</h1>
-                <h2>Contribuyendo con el Bienestar de Nuestra Comunidad</h2>
+            <h1>Nuestros Servicios</h1>
+            <h2>Contribuyendo con el Bienestar de Nuestra Comunidad</h2>
             <div className=' grid servicio'>
                 <p>En la <b>Asociación de Mujeres de Tres Cantos,</b>ofrecemos servicios con el fin de
                     aportar bienestar, apoyo y crecimiento a nuestra comunidad. Nuestras terapias y
@@ -34,7 +34,12 @@ const Servicio = () => {
                     <img src="./foto am3c.jpg" alt="" />
                 </div>
             </div>
-                <h2><Link className='contacto' to="/contacto">Agenda tu sesion de apoyo</Link></h2>
+            <h2><Link className='contacto' to="/contacto">Agenda tu sesion de apoyo</Link></h2>
+
+
+
+
+
         </div>
 
     )

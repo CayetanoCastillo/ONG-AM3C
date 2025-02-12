@@ -43,6 +43,7 @@ const NuestraHistoria = () => {
                 </div>
             </div>
             <h2><Link className='nuestra-historia' to="/calendario">lo mejor está por venir, ¡descubrelo!</Link></h2>
+
         </div>
     )
 }

@@ -79,7 +79,6 @@ const HazteSocia = () => {
                 </div>
                 <button type="submit">Enviar Mensaje</button>
             </form>
-
         </div>
     )
 }
