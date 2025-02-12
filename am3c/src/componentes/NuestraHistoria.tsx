@@ -38,7 +38,7 @@ const NuestraHistoria = () => {
                     </p>
                 </div>
                 <div className='grid grid50'>
-                    <img src="./foto am3c.jpg" alt="" />
+                    <img className='fotoizq' src="./foto am3c.jpg" alt="" />
                     <img src="./foto am3c.jpg" alt="" />
                 </div>
             </div>

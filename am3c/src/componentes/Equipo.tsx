@@ -29,7 +29,7 @@ const Equipo = () => {
                 </div>
                  <h2>El corazón y la visión de nuestro camino</h2>
                 <div className='grid grid50'>
-                <img src="./laura.png" alt="" />
+                <img src="./svg.png" alt="" />
                 <p>Laura Muñiz, actual presidenta y fundadora, es el corazón de esta asociación de
                 Mujeres. Economista de profesión y “alma guerrera” de vocación, ha dedicado su vida
                 a impulsar el papel de la mujer en la sociedad, desde la política hasta el compromiso
