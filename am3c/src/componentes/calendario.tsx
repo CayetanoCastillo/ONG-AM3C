@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './calendario.css';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
-
-const Calendario: React.FC = () => {
+const Calendario = () => {
   const monthNames = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
   ];
@@ -14,66 +13,58 @@ const Calendario: React.FC = () => {
   const [currentYear, setCurrentYear] = useState(currentDate.getFullYear());
   const [days, setDays] = useState<(number | null)[]>([]);
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
+  const [notes, setNotes] = useState<Record<string, string>>(() => {
+    return JSON.parse(localStorage.getItem('calendarNotes') || '{}');
+  });
+  const [inputValue, setInputValue] = useState('');
 
   useEffect(() => {
     generateCalendar(currentMonth, currentYear);
   }, [currentMonth, currentYear]);
 
+  useEffect(() => {
+    localStorage.setItem('calendarNotes', JSON.stringify(notes));
+  }, [notes]);
+
   const generateCalendar = (month: number, year: number) => {
-    const daysInMonth = getTotalDays(month, year);
-    const startDayOfWeek = startDay(month, year);
-    const calendarDays: (number | null)[] = [];
-
-    // Agregar espacios en blanco para los días del mes anterior
-    for (let i = 0; i < startDayOfWeek; i++) {
-      calendarDays.push(null);
-    }
-
-    // Agregar los días del mes actual
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const startDayOfWeek = new Date(year, month, 1).getDay();
+    const calendarDays: (number | null)[] = Array(startDayOfWeek === 0 ? 6 : startDayOfWeek - 1).fill(null);
     for (let i = 1; i <= daysInMonth; i++) {
       calendarDays.push(i);
     }
-
     setDays(calendarDays);
   };
 
-  const getTotalDays = (month: number, year: number): number => {
-    if (month === 0 || month === 2 || month === 4 || month === 6 || month === 7 || month === 9 || month === 11) {
-      return 31;
-    } else if (month === 3 || month === 5 || month === 8 || month === 10) {
-      return 30;
-    } else {
-      return isLeap(year) ? 29 : 28;
-    }
-  };
-
-  const isLeap = (year: number): boolean => {
-    return ((year % 100 !== 0) && (year % 4 === 0)) || (year % 400 === 0);
-  };
-
-  const startDay = (month: number, year: number): number => {
-    const start = new Date(year, month, 1);
-    return (start.getDay() === 0 ? 6 : start.getDay() - 1);
-  };
-
   const handlePrevMonth = () => {
-    if (currentMonth !== 0) {
-      setCurrentMonth(currentMonth - 1);
-    } else {
-      setCurrentMonth(11);
-      setCurrentYear(currentYear - 1);
-    }
-    setSelectedDay(null); // Reset selected day when changing month
+    setCurrentMonth((prev) => (prev === 0 ? 11 : prev - 1));
+    if (currentMonth === 0) setCurrentYear((prev) => prev - 1);
+    setSelectedDay(null);
+    setInputValue('');
   };
 
   const handleNextMonth = () => {
-    if (currentMonth !== 11) {
-      setCurrentMonth(currentMonth + 1);
-    } else {
-      setCurrentMonth(0);
-      setCurrentYear(currentYear + 1);
+    setCurrentMonth((prev) => (prev === 11 ? 0 : prev + 1));
+    if (currentMonth === 11) setCurrentYear((prev) => prev + 1);
+    setSelectedDay(null);
+    setInputValue('');
+  };
+
+  const handleDayClick = (day: number) => {
+    setSelectedDay(day);
+    const key = `${currentYear}-${currentMonth}-${day}`;
+    setInputValue(notes[key] || '');
+  };
+
+  const handleNoteChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setInputValue(event.target.value);
+  };
+
+  const saveNote = () => {
+    if (selectedDay !== null) {
+      const key = `${currentYear}-${currentMonth}-${selectedDay}`;
+      setNotes((prev) => ({ ...prev, [key]: inputValue }));
     }
-    setSelectedDay(null); // Reset selected day when changing month
   };
 
   return (
@@ -81,10 +72,6 @@ const Calendario: React.FC = () => {
       <h1>Actividades y Encuentros para Crecer Juntas</h1>
       <h2>¿Qué pasa este mes en AM3C?</h2>
       <div className='calendar_container'>
-          <p><b>En la Asociación de Mujeres de Tres Cantos</b>, cada mes, preparamos una
-            programación llena de actividades para disfrutar <b>creciendo juntas</b>. Desde talleres de
-            meditación y baile hasta clases de idiomas y <b>apoyo emocional</b>, nuestras actividades
-            buscan el bienestar y el desarrollo integral de cada socia.</p>
         <div className='calendar_box'>
           <div className="calendar">
             <div className="calendar__info">
@@ -93,7 +80,6 @@ const Calendario: React.FC = () => {
               <div className="calendar__year">{currentYear}</div>
               <div className="calendar__next" onClick={handleNextMonth}>&#9654;</div>
             </div>
-
             <div className="calendar__week">
               <div className="calendar__day calendar__item">Lun</div>
               <div className="calendar__day calendar__item">Mar</div>
@@ -103,20 +89,14 @@ const Calendario: React.FC = () => {
               <div className="calendar__day calendar__item">Sab</div>
               <div className="calendar__day calendar__item">Dom</div>
             </div>
-
             <div className="calendar__dates">
               {days.map((day, index) => {
-                if (day === null) {
-                  return <div key={index} className="calendar__date calendar__item calendar__empty"></div>;
-                }
-
-                const isCurrentDay = day === currentDate.getDate() && currentMonth === currentDate.getMonth() && currentYear === currentDate.getFullYear();
-                const isSelectedDay = day === selectedDay;
+                const key = `${currentYear}-${currentMonth}-${day}`;
                 return (
                   <div
                     key={index}
-                    className={`calendar__date calendar__item ${isSelectedDay ? 'calendar__selected' : ''}`}
-                    onClick={() => setSelectedDay(day)}
+                    className={`calendar__date calendar__item ${selectedDay === day ? 'calendar__selected' : ''} ${notes[key] ? 'calendar__marked' : ''}`}
+                    onClick={() => day !== null && handleDayClick(day)}
                   >
                     {day}
                   </div>
@@ -129,7 +109,8 @@ const Calendario: React.FC = () => {
               {selectedDay ? (
                 <>
                   <h3>Información del {selectedDay} de {monthNames[currentMonth]} {currentYear}</h3>
-                  <p>Aquí puedes añadir información o eventos relacionados con este día.</p>
+                  <textarea value={inputValue} onChange={handleNoteChange} placeholder="Escribe aquí..." />
+                  <button onClick={saveNote}>Guardar</button>
                 </>
               ) : (
                 <>

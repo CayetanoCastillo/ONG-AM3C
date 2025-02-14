@@ -28,7 +28,7 @@ const inicio = () => {
                 <img src="./foto am3c.jpg" alt="" />
             </div>
             <div className='grid grid50'>
-                <img src="./imagen1.jpg" alt="" />
+                <img src="./foto am3c.jpg" alt="" />
                 <p><b>Mision </b><br /><br />Somos un espacio seguro, de crecimiento
                     y <b>empoderamiento</b> para construir una
                     sociedad más equitativa. A través del
