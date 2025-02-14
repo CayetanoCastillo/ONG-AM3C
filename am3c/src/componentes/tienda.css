@@ -1,0 +1,56 @@
+.roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.tienda body{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.tienda p{
+    text-align: center;
+}
+.grid{
+    display: grid;
+}
+.grid50{
+    grid-template-columns: 50% 50%;
+}
+.grid50 img{
+    width: 25%;
+}
+.tienda h1{
+    text-align: center;
+}
+.tienda h2{
+    text-align: center;
+}
+.tienda p {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tienda .grid {
+    display: grid;
+    gap: 20px;
+}
+
+.tienda .grid50 figure {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tienda figcaption {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+    line-height: 1.4;
+}
