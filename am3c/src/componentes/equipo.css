@@ -16,12 +16,14 @@
     text-align: center;
     font-size: 36px;
     color: #7a287d;
+    margin-bottom: 10px;
 }
 
 .equipo h2 {
     text-align: center;
     font-size: 28px;
     color: #c160c8;
+    margin-bottom: -30px;
 }
 .equipo h3{
     text-align: center;

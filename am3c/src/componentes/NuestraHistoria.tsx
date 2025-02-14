@@ -37,7 +37,7 @@ const NuestraHistoria = () => {
                         cambio duradero en nuestra comunidad.
                     </p>
                 </div>
-                <div className='grid grid50'>
+                <div className='grid grid50 imagenes'>
                     <img className='fotoizq' src="./foto am3c.jpg" alt="" />
                     <img src="./foto am3c.jpg" alt="" />
                 </div>
