@@ -65,11 +65,6 @@ const App = () => {
         >
         </Route>
         <Route
-          path="/tienda"
-          element={<Tienda />}
-        >
-        </Route>
-        <Route
           path="/evento"
           element={<Evento />}
         >
