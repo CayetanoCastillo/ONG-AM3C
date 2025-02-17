@@ -9,7 +9,6 @@ import Equipo from './componentes/Equipo';
 import NuestraHistoria from './componentes/NuestraHistoria';
 import Calendario from './componentes/calendario';
 import Servicio from './componentes/servicio';
-import Tienda from './componentes/tienda';
 import Evento from './componentes/evento';
 import Contacto from './componentes/contacto';
 import Footer from './componentes/footer'
