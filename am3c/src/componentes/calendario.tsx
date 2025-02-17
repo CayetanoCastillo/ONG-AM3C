@@ -5,7 +5,8 @@ import { Helmet } from 'react-helmet';
 
 const Calendario = () => {
   const monthNames = [
-    'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+    'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
   ];
 
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -95,8 +96,8 @@ const Calendario = () => {
                 return (
                   <div
                     key={index}
-                    className={`calendar__date calendar__item ${selectedDay === day ? 'calendar__selected' : ''} ${notes[key] ? 'calendar__marked' : ''}`}
-                    onClick={() => day !== null && handleDayClick(day)}
+                    className={`calendar__date calendar__item ${selectedDay === day ? 'calendar__selected' : ''} ${notes[key] ? 'calendar__marked' : ''} ${day === null ? 'calendar__disabled' : ''}`}
+                    onClick={day !== null ? () => handleDayClick(day) : undefined}
                   >
                     {day}
                   </div>

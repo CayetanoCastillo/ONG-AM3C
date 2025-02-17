@@ -9,7 +9,11 @@
     display: grid;
     grid-template-columns: 60% auto;
   }
-
+  .calendar__disabled {
+    pointer-events: none;
+    opacity: 0;
+    background-color: #ffcbef;
+  }
 
   .title {
     text-align: center;
