@@ -56,3 +56,27 @@ app.post("/contacto", (req, res) => {
     })
     res.send("Contacto creada correctamente.");
 })
+
+app.get("/obtenerSocias", async (req, res) => {
+    try{
+        const socias = await Socia.find();
+        res.send(socias);
+    }
+    catch(error){
+        res.status(500).json({
+            error:"Error al obtener los usuarios"
+        })
+    }
+})
+
+app.get("/obtenerContactos", async (req, res) => {
+    try{
+        const contactos = await Contacto.find();
+        res.send(contactos);
+    }
+    catch(error){
+        res.status(500).json({
+            error:"Error al obtener los contactos"
+        })
+    }
+})
