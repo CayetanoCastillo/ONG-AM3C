@@ -31,12 +31,7 @@ const Header = () => {
                                 <li><Link to="/Evento">Eventos</Link></li>
                             </ul>
                         </li>
-                        <li className="dropdown">
-                            <Link to="/servicio">Servicios</Link>
-                            <ul className="dropdown-menu">
-                                <li><Link to="/tienda">Productos</Link></li>
-                            </ul>
-                        </li>
+                        <li><Link to="/servicio">Servicios</Link></li>
                         <li><Link to="/contacto">Contacto</Link></li>
                     </ul>
 

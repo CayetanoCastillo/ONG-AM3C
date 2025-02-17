@@ -57,27 +57,10 @@
     margin: 0;
     margin-right: 20px;
 }
-
-
 .servicio b {
     color: #7a287d;
     font-weight: bold;
 }
-
-
-.servicio ul {
-    background-color: #ffe6f7;
-    border-radius: 30px;
-    padding: 80px;
-    text-align: center;
-    font-size: 18px;
-    color: #7a287d;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    margin: 0;
-    margin-right: 20px;
-}
-
 .servicio li {
     margin-bottom: 10px;
     font-size: 1rem;
