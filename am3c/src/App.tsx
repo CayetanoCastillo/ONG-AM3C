@@ -11,6 +11,7 @@ import Calendario from './componentes/calendario';
 import Servicio from './componentes/servicio';
 import Evento from './componentes/evento';
 import Contacto from './componentes/contacto';
+import Obtenercontactos from './componentes/obtenercontactos';
 import Socias from './componentes/socias';
 import Footer from './componentes/footer'
 import HazteSocia from './componentes/HazteSocia';
@@ -77,6 +78,11 @@ const App = () => {
         <Route
           path="/socias"
           element={<Socias />}
+        >
+        </Route>
+        <Route
+          path="/obtenercontactos"
+          element={<Obtenercontactos />}
         >
         </Route>
         <Route

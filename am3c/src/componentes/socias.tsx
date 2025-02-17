@@ -44,14 +44,14 @@ const socias = () => {
                     data.map(articulo => {
                         return(
                             <div className='grid grid33'>
-                                <p>{articulo._id}</p>
-                                <p>{articulo.nombre}</p>
-                                <p>{articulo.apellido}</p>
-                                <p>{articulo.apellido2}</p>
-                                <p>{articulo.dni}</p>
-                                <p>{articulo.domicilio}</p>
-                                <p>{articulo.correo}</p>
-                                <p>{articulo.telefono}</p>
+                                <p>id: {articulo._id}</p>
+                                <p>nombre: {articulo.nombre}</p>
+                                <p>apellido: {articulo.apellido}</p>
+                                <p>apellido2: {articulo.apellido2}</p>
+                                <p>dni: {articulo.dni}</p>
+                                <p>domicilio: {articulo.domicilio}</p>
+                                <p>correo: {articulo.correo}</p>
+                                <p>telefono: {articulo.telefono}</p>
                             </div>
 
                         )

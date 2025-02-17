@@ -6,33 +6,33 @@
     font-variation-settings: "wdth" 100;
 }
 
-.socias body {
+.contactos body {
     margin: 0;
     background-color: #fdf3f7;
     font-family: "Roboto", sans-serif;
 }
 
-.socias {
+.contactos {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
-.socias h1 {
+.contactos h1 {
     text-align: center;
     font-size: 36px;
     color: #7a287d;
     margin-bottom: 20px;
 }
 
-.socias .grid {
+.contactos .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-.socias .grid33 {
+.contactos .grid33 {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -42,16 +42,16 @@
     margin-bottom: 70px;
 }
 
-.socias .grid33:hover {
+.contactos .grid33:hover {
     transform: scale(1.02);
 }
 
-.socias .grid33 p {
+.contactos .grid33 p {
     margin: 8px 0;
     color: #333;
 }
 
-.socias .grid33 p:nth-child(odd) {
+.contactos .grid33 p:nth-child(odd) {
     font-weight: bold;
     color: #7a287d;
 }

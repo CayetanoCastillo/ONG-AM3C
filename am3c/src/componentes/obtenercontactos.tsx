@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {Helmet} from 'react-helmet';
-
+import './obtenercontactos.css';
 
 const obtenercontactos = () => {
 
@@ -33,18 +33,18 @@ const obtenercontactos = () => {
 
     return(
         <div className='contactos'>
-            <h1>listado de contactos de AM3C</h1>
+            <h1>Listado de contactos de AM3C</h1>
             <section className=''>
                 {
                     data.map(articulo => {
                         return(
                             <div className='grid grid33'>
-                                <p>{articulo._id}</p>
-                                <p>{articulo.nombre}</p>
-                                <p>{articulo.email}</p>
-                                <p>{articulo.telefono}</p>
-                                <p>{articulo.asunto}</p>
-                                <p>{articulo.mensaje}</p>
+                                <p>id: {articulo._id}</p>
+                                <p>nombre: {articulo.nombre}</p>
+                                <p>correo: {articulo.email}</p>
+                                <p>telefono: {articulo.telefono}</p>
+                                <p>asunto: {articulo.asunto}</p>
+                                <p>mensaje: {articulo.mensaje}</p>
                             </div>
                         )
                     })
