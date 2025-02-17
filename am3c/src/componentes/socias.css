@@ -1,0 +1,33 @@
+.roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.socias body {
+    margin: 0;
+    background-color: #fdf3f7;
+}
+
+.socias h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #7a287d;
+    margin-top: 30px;
+}
+
+.socias h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #c160c8;
+    margin-top: 10px;
+}
+.socias .grid {
+    display: grid;;
+}
+.socias .gid33{
+    grid-template-columns: 33% 33% 33%;
+    
+}

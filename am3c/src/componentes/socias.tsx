@@ -37,13 +37,13 @@ const socias = () => {
 
 
     return(
-        <div>
-            <h1 className='titulo'>Listado de socias de AM3C</h1>
+        <div className='socias'>
+            <h1>Listado de socias de AM3C</h1>
             <section className=''>
                 {
                     data.map(articulo => {
                         return(
-                            <div>
+                            <div className='grid grid33'>
                                 <p>{articulo._id}</p>
                                 <p>{articulo.nombre}</p>
                                 <p>{articulo.apellido}</p>
