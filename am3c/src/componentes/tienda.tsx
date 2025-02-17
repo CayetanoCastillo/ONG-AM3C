@@ -19,19 +19,19 @@ const Tienda: React.FC = () => {
                 <div className="grid grid50">
                     <figure>
                         <img src="./camiseta.png" alt="Camiseta solidaria AM3C" />
-                        <figcaption><b>Camiseta solidaria</b> <br /> Algodón 100%, disponible en varias tallas.</figcaption>
+                        <figcaption><b>Camiseta AM3C</b> <br /> Camiseta disponible en distintas tallas</figcaption>
                     </figure>
                     <figure>
                         <img src="./bolsa.png" alt="Bolsa ecológica AM3C" />
-                        <figcaption><b>Bolsa ecológica</b> <br /> Hecha con materiales reciclados y reutilizables.</figcaption>
+                        <figcaption><b>Bolsa AM3C</b> <br /> Hecha con materiales reciclados y reutilizables.</figcaption>
                     </figure>
                     <figure>
                         <img src="./gorras.png" alt="Gorra AM3C" />
-                        <figcaption><b>Gorra exclusiva</b> <br /> Ajustable y disponible en diferentes colores.</figcaption>
+                        <figcaption><b>Gorra AM3C</b> <br />Gorra ajustable</figcaption>
                     </figure>
                     <figure>
                         <img src="./bandera.png" alt="Bandera de apoyo AM3C" />
-                        <figcaption><b>Bandera solidaria</b> <br /> Representa nuestro compromiso con la comunidad.</figcaption>
+                        <figcaption><b>Cuadro AM3C</b> <br />Cuadro tamaño mediano AM3C</figcaption>
                     </figure>
                 </div>
             </section>
