@@ -5,10 +5,12 @@ const puerto = 8080;
 const app = express();
 const sociaSchema = require('./schemas/Socia');
 const contactoSchema = require('./schemas/Contacto');
+const calendarioSchema = require('./schemas/Calendario');
 const mongooseCon = require ('./conexion');
 const mongoose = require("mongoose");
 const Contacto = mongoose.model("Contacto", contactoSchema);
 const Socia = mongoose.model("Socia", sociaSchema);
+const Calendario = mongoose.model("Calendario", calendarioSchema);
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
@@ -56,6 +58,20 @@ app.post("/contacto", (req, res) => {
     })
     res.send("Contacto creada correctamente.");
 })
+app.post("/insertarCalendario", (req, res) => {
+    console.log(req.body);
+    const nuevoUsuario = new Calendario({
+        fecha: req.body.fecha,
+        info: req.body.info,
+    
+    })
+    nuevoUsuario.save()
+    .then((usuario) => {
+        console.log("Calendario creada correctamente: "+usuario)
+    })
+    res.send("Calendario creada correctamente.");
+})
+
 
 app.get("/obtenerSocias", async (req, res) => {
     try{
@@ -77,6 +93,18 @@ app.get("/obtenerContactos", async (req, res) => {
     catch(error){
         res.status(500).json({
             error:"Error al obtener los contactos"
+        })
+    }
+})
+
+app.get("/calendario", async (req, res) => {
+    try{
+        const calendarios = await Calendario.find();
+        res.send(calendarios);
+    }
+    catch(error){
+        res.status(500).json({
+            error:"Error al obtener los calendarios"
         })
     }
 })

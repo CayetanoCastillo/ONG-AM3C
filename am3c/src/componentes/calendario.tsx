@@ -1,12 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './calendario.css';
-import { Helmet } from 'react-helmet';
+
 
 const Calendario = () => {
+
+  const fecha = useRef<HTMLInputElement>(null);
+  const info = useRef<HTMLInputElement>(null);
+  let [data, actualizarData] = useState<Calendario[]>([]);
+
+  interface Calendario {
+    fecha: string;
+    info: string;
+  }
+
+  useEffect(() =>{
+    fetch("http://localhost:8080/calendario")
+        .then((datos) => {
+            return datos.json();
+        })
+        .then((datos) => {
+            actualizarData(datos);
+        })
+})
+
+const eventDetails = new Map<string, string>();
+data.forEach(({ fecha, info }) => {
+  eventDetails.set(fecha, info);
+});
+
   const monthNames = [
-    'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
-  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+    'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+    'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
   ];
 
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -110,8 +135,7 @@ const Calendario = () => {
               {selectedDay ? (
                 <>
                   <h3>Información del {selectedDay} de {monthNames[currentMonth]} {currentYear}</h3>
-                  <textarea value={inputValue} onChange={handleNoteChange} placeholder="Escribe aquí..." />
-                  <button onClick={saveNote}>Guardar</button>
+                  <p>{eventDetails.get(`${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(selectedDay).padStart(2, '0')}`) || 'No hay eventos programados para este día.'}</p>
                 </>
               ) : (
                 <>

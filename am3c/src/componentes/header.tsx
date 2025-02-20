@@ -35,6 +35,7 @@ const Header = () => {
                         <li><Link to="/contacto">Contacto</Link></li>
                         <li><Link to="/socias">Listado de Socias</Link></li>
                         <li><Link to="/obtenercontactos">Listado de contactos</Link></li>
+                        <li><Link to="/insertarCalendario">Insertar calendario</Link></li>
                     </ul>
 
                 </nav>
