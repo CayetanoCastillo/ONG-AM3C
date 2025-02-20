@@ -33,7 +33,7 @@ const InsertarCalendario = () => {
           <input 
             type='text' 
             ref={fecha}
-            placeholder='ej: 2025-10-10'
+            placeholder='ej: 2025-01-01'
             name='fecha'
             required 
           />
