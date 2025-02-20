@@ -183,3 +183,7 @@
     background-color: #c160c8;
     transform: scale(1.05);
 }
+.contacto .evento{
+    text-align: center;
+    color: purple;
+}
