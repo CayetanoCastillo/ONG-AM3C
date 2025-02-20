@@ -5,6 +5,11 @@
     color: #7a287d;
     font-weight: bold;
   }
+  textarea{
+    resize: none;
+    width: 300px;
+    height: 150px;
+  }
   .calendar_box{
     display: grid;
     grid-template-columns: 60% auto;
