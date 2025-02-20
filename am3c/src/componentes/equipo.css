@@ -90,9 +90,9 @@
     padding: 20px;
 }
 
-.equipo a {
-    color:#7a287d; 
-    text-decoration: none;
+.equipo .equipoLink {
+    text-align: center;
+    color: purple;
 }
 
 .equipo a:hover {

@@ -42,7 +42,7 @@ const NuestraHistoria = () => {
                     <img src="./foto am3c.jpg" alt="" />
                 </div>
             </div>
-            <h2><Link className='nuestra-historia' to="/calendario">lo mejor está por venir, ¡descubrelo!</Link></h2>
+            <h2><Link className='nuestrahistoriaLink' to="/calendario">Lo mejor está por venir, ¡descubrelo!</Link></h2>
 
         </div>
     )
